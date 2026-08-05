@@ -1,0 +1,57 @@
+name: Update DUT public data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 07:17 Lisbon time during summer; deliberately not on the hour.
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dut-public-data-update
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install package and test dependencies
+        run: python -m pip install -e ".[dev]"
+
+      - name: Run parser tests
+        run: pytest -q
+
+      - name: Collect DUT metadata
+        run: python -m dut_monitor.runner --output public
+
+      - name: Validate generated JSON
+        run: |
+          python -m json.tool public/manifest.json >/dev/null
+          python -m json.tool public/calls.json >/dev/null
+          python -m json.tool public/events.json >/dev/null
+          python -m json.tool public/publications.json >/dev/null
+          python -m json.tool public/changes-latest.json >/dev/null
+
+      - name: Commit material data changes
+        run: |
+          if git diff --quiet -- public; then
+            echo "No material data changes."
+            exit 0
+          fi
+          git config user.name "dut-data-bot"
+          git config user.email "dut-data-bot@users.noreply.github.com"
+          git add public
+          git commit -m "data: update DUT public metadata"
+          git push
