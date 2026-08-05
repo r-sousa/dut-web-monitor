@@ -1,3 +1,19 @@
+Metadata-Version: 2.4
+Name: dut-web-monitor
+Version: 0.1.0
+Summary: Monitor public DUT Partnership web content and publish Power Automate-friendly JSON datasets.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4<5,>=4.12
+Requires-Dist: lxml<6,>=5.2
+Requires-Dist: python-dateutil<3,>=2.9
+Requires-Dist: requests<3,>=2.32
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8; extra == "dev"
+Requires-Dist: ruff<1,>=0.6; extra == "dev"
+Dynamic: license-file
+
 # DUT web monitor
 
 This repository monitors selected public content on the European Driving Urban Transitions website and publishes simple JSON files for ingestion by Microsoft Power Automate and SharePoint.

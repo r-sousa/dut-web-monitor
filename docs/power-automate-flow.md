@@ -16,6 +16,8 @@ https://raw.githubusercontent.com/<owner>/<repo>/main/public/manifest.json
 https://raw.githubusercontent.com/<owner>/<repo>/main/public/calls.json
 https://raw.githubusercontent.com/<owner>/<repo>/main/public/events.json
 https://raw.githubusercontent.com/<owner>/<repo>/main/public/publications.json
+https://raw.githubusercontent.com/<owner>/<repo>/main/public/webinars.json
+https://raw.githubusercontent.com/<owner>/<repo>/main/public/newsletters.json
 https://raw.githubusercontent.com/<owner>/<repo>/main/public/changes-latest.json
 ```
 
@@ -68,7 +70,7 @@ https://raw.githubusercontent.com/<owner>/<repo>/main/public/changes-latest.json
 
 Inputs: dataset name and record object.
 
-1. Select the SharePoint list based on the dataset.
+1. Select the SharePoint list based on the dataset (`DUT_Calls`, `DUT_Events`, `DUT_Publications`, `DUT_Webinars` or `DUT_Newsletters`).
 2. `Get items` using a filter on the stable external ID.
 3. If no item exists:
    - Create item.

@@ -37,7 +37,7 @@ DUT_Events,Start Date,StartDate,Date only,No,GitHub,High materiality
 DUT_Events,End Date,EndDate,Date only,No,GitHub,
 DUT_Events,Time Text,TimeText,Single line text,No,GitHub,
 DUT_Events,Location,Location,Single line text,No,GitHub,
-DUT_Events,Mode,EventMode,Choice,No,GitHub,online; on-site; hybrid; unspecified
+DUT_Events,Mode,EventMode,Choice,No,GitHub,online; on-site
 DUT_Events,Registration URL,RegistrationURL,Hyperlink,No,GitHub,
 DUT_Events,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
 DUT_Events,Regional Relevance,RegionalRelevance,Multiple lines text,No,CCDR,Never overwritten
@@ -62,3 +62,41 @@ DUT_Import_Exceptions,Dataset,Dataset,Choice,Yes,Flow,calls; events; publication
 DUT_Import_Exceptions,Error Time,ErrorTime,Date and time,Yes,Flow,UTC
 DUT_Import_Exceptions,Error Detail,ErrorDetail,Multiple lines text,Yes,Flow,
 DUT_Import_Exceptions,Payload,Payload,Multiple lines text,No,Flow,Truncated if necessary
+DUT_Webinars,Title,Title,Single line text,Yes,GitHub,Webinar title
+DUT_Webinars,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
+DUT_Webinars,Series,WebinarSeries,Single line text,Yes,GitHub,Urban Lunch Talks
+DUT_Webinars,Episode Number,EpisodeNumber,Number,No,GitHub,Whole number
+DUT_Webinars,Source URL,SourceURL,Hyperlink,Yes,GitHub,Canonical DUT event page
+DUT_Webinars,Source Event ID,SourceEventID,Single line text,Yes,GitHub,Links to DUT_Events record
+DUT_Webinars,Event Date,EventDate,Date only,No,GitHub,
+DUT_Webinars,End Date,EndDate,Date only,No,GitHub,
+DUT_Webinars,Date Text,DateText,Single line text,No,GitHub,Original source display
+DUT_Webinars,Time Text,TimeText,Single line text,No,GitHub,
+DUT_Webinars,Recording URL,RecordingURL,Hyperlink,No,GitHub,Canonical YouTube watch URL
+DUT_Webinars,Recording Status,RecordingStatus,Choice,Yes,GitHub,available; not_found
+DUT_Webinars,Registration URL,RegistrationURL,Hyperlink,No,GitHub,
+DUT_Webinars,Speakers JSON,SpeakersJSON,Multiple lines text,No,GitHub,Plain JSON text
+DUT_Webinars,Moderator,Moderator,Multiple lines text,No,GitHub,
+DUT_Webinars,Description Excerpt,DescriptionExcerpt,Multiple lines text,No,GitHub,
+DUT_Webinars,Retrieved At,RetrievedAt,Date and time,No,GitHub,UTC
+DUT_Webinars,Source Status,SourceStatus,Choice,Yes,GitHub,active; possibly_removed; archived
+DUT_Webinars,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
+DUT_Webinars,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
+DUT_Webinars,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
+DUT_Webinars,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
+DUT_Newsletters,Title,Title,Single line text,Yes,Flow,Map from issue_label
+DUT_Newsletters,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
+DUT_Newsletters,Issue Label,IssueLabel,Single line text,Yes,GitHub,Source display label
+DUT_Newsletters,Issue Year,IssueYear,Number,No,GitHub,Whole number
+DUT_Newsletters,Issue Month,IssueMonth,Number,No,GitHub,1-12; seasonal anchor when applicable
+DUT_Newsletters,Issue Period,IssuePeriod,Choice,Yes,GitHub,month; season; unknown
+DUT_Newsletters,Issue Sort Date,IssueSortDate,Date only,No,GitHub,Synthetic first day for ordering only
+DUT_Newsletters,Archive URL,ArchiveURL,Hyperlink,Yes,GitHub,Mailchimp public archive URL without recipient tracking parameter
+DUT_Newsletters,Archive Host,ArchiveHost,Single line text,No,GitHub,
+DUT_Newsletters,Source Page URL,SourceURL,Hyperlink,Yes,GitHub,CCDR NORTE archive page
+DUT_Newsletters,Retrieved At,RetrievedAt,Date and time,No,GitHub,UTC
+DUT_Newsletters,Source Status,SourceStatus,Choice,Yes,GitHub,active; possibly_removed; archived
+DUT_Newsletters,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
+DUT_Newsletters,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
+DUT_Newsletters,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
+DUT_Newsletters,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived

@@ -1,7 +1,14 @@
 import json
 from pathlib import Path
 
-from dut_monitor.parsers import parse_call, parse_event, parse_library
+from dut_monitor.parsers import (
+    is_webinar_title,
+    parse_call,
+    parse_event,
+    parse_library,
+    parse_regional_newsletters,
+    parse_webinar,
+)
 
 FIXTURES = Path(__file__).parent / "fixtures"
 NOW = "2026-08-05T22:30:00Z"
@@ -77,3 +84,34 @@ def test_parse_library() -> None:
         "DUT Publications",
         "DUT Knowledge Hub Outputs",
     }
+
+
+def test_parse_webinar() -> None:
+    record = parse_webinar(
+        read("webinar.html"),
+        "https://dutpartnership.eu/events/urban-lunch-talk-45-energy-communities",
+        NOW,
+    )
+    assert is_webinar_title(record["title"])
+    assert record["episode_number"] == 45
+    assert record["event_date"] == "2026-03-04"
+    assert record["recording_url"] == "https://www.youtube.com/watch?v=AbCdEf12345"
+    assert record["recording_status"] == "available"
+    assert json.loads(record["speakers_json"]) == [
+        "Adela Bara, Bucharest Academy",
+        "Chris Vrettos, REScoop",
+    ]
+    assert record["moderator"] == "Ana Calvo, DUT Partnership"
+
+
+def test_parse_regional_newsletters() -> None:
+    records = parse_regional_newsletters(
+        read("newsletters.html"),
+        "https://www.ccdr-n.pt/pagina/outra-documentacao-relevante-dut",
+        NOW,
+    )
+    assert len(records) == 3
+    assert records[0]["issue_label"] == "Fevereiro 2026"
+    assert records[0]["issue_sort_date"] == "2026-02-01"
+    assert records[-1]["issue_period"] == "season"
+    assert all("e=" not in item["archive_url"] for item in records)

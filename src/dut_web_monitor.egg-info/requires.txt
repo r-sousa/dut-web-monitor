@@ -1,0 +1,8 @@
+beautifulsoup4<5,>=4.12
+lxml<6,>=5.2
+python-dateutil<3,>=2.9
+requests<3,>=2.32
+
+[dev]
+pytest<9,>=8
+ruff<1,>=0.6

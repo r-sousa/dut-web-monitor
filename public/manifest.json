@@ -1,29 +1,39 @@
 {
   "schema_version": "1.0",
-  "dataset_version": "2026-08-05T23:24:04Z",
-  "generated_at": "2026-08-05T23:24:04Z",
-  "dataset_hash": "sha256:af1e600fce40ba3d6584406f30a1074bc57578c94aeea5ac48a99ce93f219886",
+  "dataset_version": "2026-08-05T23:49:30Z",
+  "generated_at": "2026-08-05T23:49:30Z",
+  "dataset_hash": "sha256:6f760f22186d4b865888189150583f24092853a6f556b14c349e5474bbc16609",
   "status": "valid",
   "changed_datasets": [
-    "calls",
-    "events"
+    "webinars",
+    "newsletters"
   ],
   "record_counts": {
     "calls": 5,
     "events": 95,
-    "publications": 17
+    "publications": 17,
+    "webinars": 24,
+    "newsletters": 15
   },
   "dataset_hashes": {
     "calls": "sha256:52a22f0c504d74faef5803606779bc54e7249b0582e739a6f68b9d9a1f08e1a3",
     "events": "sha256:7d6820356b5f07e45f6b5e4b0f41b824099b3feda5290a38c9849b193f4746f7",
-    "publications": "sha256:97fe03541d72355c81be91295013c1b93980e2ed743fb00c63fb58b2bdaebffe"
+    "publications": "sha256:97fe03541d72355c81be91295013c1b93980e2ed743fb00c63fb58b2bdaebffe",
+    "webinars": "sha256:7ebb9a6f1b962c440dc1846dab79c7bb17686c8e8ea14af78ab34b8f3f22a4b6",
+    "newsletters": "sha256:4c02990f88ddbc756d6da16fda8641b71e000383422b65ad50924f3381c692f0"
   },
   "files": {
     "calls": "calls.json",
     "events": "events.json",
     "publications": "publications.json",
+    "webinars": "webinars.json",
+    "newsletters": "newsletters.json",
     "changes": "changes-latest.json"
   },
   "source": "https://dutpartnership.eu",
+  "sources": [
+    "https://dutpartnership.eu",
+    "https://www.ccdr-n.pt/pagina/outra-documentacao-relevante-dut"
+  ],
   "errors": []
 }

@@ -1,0 +1,2 @@
+[console_scripts]
+dut-monitor = dut_monitor.runner:main

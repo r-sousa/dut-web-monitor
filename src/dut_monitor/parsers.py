@@ -4,7 +4,7 @@ import json
 import re
 from datetime import date, datetime
 from typing import Any, Iterable
-from urllib.parse import urlsplit
+from urllib.parse import parse_qsl, parse_qs, urlencode, urljoin, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup, Tag
 from dateutil import parser as date_parser
@@ -542,3 +542,260 @@ def parse_library(html: str, fetched_url: str, retrieved_at: str) -> list[dict[s
             }
         )
     return sorted(publications, key=lambda item: (item["category"], item["title"].lower()))
+
+WEBINAR_TITLE_PATTERN = re.compile(r"\burban lunch talks?\b", re.I)
+PORTUGUESE_MONTHS = {
+    "janeiro": 1,
+    "fevereiro": 2,
+    "marco": 3,
+    "março": 3,
+    "abril": 4,
+    "maio": 5,
+    "junho": 6,
+    "julho": 7,
+    "agosto": 8,
+    "setembro": 9,
+    "outubro": 10,
+    "novembro": 11,
+    "dezembro": 12,
+}
+PORTUGUESE_SEASONS = {
+    "inverno": 1,
+    "primavera": 4,
+    "verao": 7,
+    "verão": 7,
+    "outono": 10,
+}
+NEWSLETTER_HOST_SUFFIXES = ("mailchi.mp", "campaign-archive.com")
+
+
+def is_webinar_title(title: str | None) -> bool:
+    return bool(title and WEBINAR_TITLE_PATTERN.search(title))
+
+
+def _normalise_youtube_url(candidate: str, base_url: str) -> str | None:
+    if not candidate:
+        return None
+    absolute = urljoin(base_url, candidate.replace("&amp;", "&"))
+    parts = urlsplit(absolute)
+    host = parts.netloc.lower().split(":", 1)[0]
+    video_id: str | None = None
+    if host.endswith("youtu.be"):
+        video_id = parts.path.strip("/").split("/", 1)[0]
+    elif host.endswith("youtube.com") or host.endswith("youtube-nocookie.com"):
+        if parts.path == "/watch":
+            video_id = (parse_qs(parts.query).get("v") or [None])[0]
+        else:
+            match = re.search(r"/(?:embed|shorts)/([A-Za-z0-9_-]{6,})", parts.path)
+            if match:
+                video_id = match.group(1)
+    if not video_id:
+        return None
+    return f"https://www.youtube.com/watch?v={video_id}"
+
+
+def _extract_youtube_url(soup: BeautifulSoup, canonical_url: str, html: str) -> str | None:
+    candidates: list[str] = []
+    for element in soup.find_all(True):
+        for attr in ("href", "src", "data-src", "data-video-url", "data-cookieblock-src"):
+            value = element.get(attr)
+            if isinstance(value, str) and ("youtu" in value.lower()):
+                candidates.append(value)
+    candidates.extend(
+        match.group(0)
+        for match in re.finditer(
+            r"https?://(?:www\.)?(?:youtube(?:-nocookie)?\.com/(?:watch\?[^\"'\s<>]*v=|embed/|shorts/)|youtu\.be/)[A-Za-z0-9_?&=./%-]+",
+            html,
+            flags=re.I,
+        )
+    )
+    for candidate in candidates:
+        normalised = _normalise_youtube_url(candidate, canonical_url)
+        if normalised:
+            return normalised
+    return None
+
+
+def _section_items(soup: BeautifulSoup, heading_pattern: str, limit: int = 40) -> list[str]:
+    regex = re.compile(heading_pattern, re.I)
+    heading = next(
+        (h for h in soup.find_all(["h2", "h3", "h4"]) if regex.search(normalise_space(h.get_text(" ", strip=True)) or "")),
+        None,
+    )
+    if not heading:
+        return []
+    level = int(heading.name[1])
+    values: list[str] = []
+    for element in heading.find_all_next():
+        if element is heading:
+            continue
+        if element.name in {"h2", "h3", "h4"} and int(element.name[1]) <= level:
+            break
+        if element.name not in {"li", "p"}:
+            continue
+        text = normalise_space(element.get_text(" ", strip=True))
+        if not text or text.lower().startswith("moderator:"):
+            continue
+        if text not in values:
+            values.append(text)
+        if len(values) >= limit:
+            break
+    return values
+
+
+def _moderator(soup: BeautifulSoup) -> str | None:
+    root = _content_root(soup)
+    for element in root.find_all(["p", "li", "div"]):
+        text = normalise_space(element.get_text(" ", strip=True))
+        if text and re.match(r"^moderator\s*:", text, flags=re.I):
+            return normalise_space(re.sub(r"^moderator\s*:\s*", "", text, flags=re.I))
+    return None
+
+
+def parse_webinar(html: str, fetched_url: str, retrieved_at: str) -> dict[str, Any]:
+    soup = _soup(html)
+    base = parse_event(html, fetched_url, retrieved_at)
+    title = base["title"]
+    if not is_webinar_title(title):
+        raise ValueError("Event is not an Urban Lunch Talk webinar")
+    canonical_url = base["canonical_url"]
+    episode_match = re.search(r"urban lunch talks?\s*#\s*(\d+)", title, flags=re.I)
+    episode_number = int(episode_match.group(1)) if episode_match else None
+    recording_url = _extract_youtube_url(soup, canonical_url, html)
+    speakers = _section_items(soup, r"^Speakers?\b")
+    moderator = _moderator(soup)
+    source_payload = {
+        "series": "Urban Lunch Talks",
+        "episode_number": episode_number,
+        "title": title,
+        "canonical_url": canonical_url,
+        "event_date": base.get("start_date"),
+        "end_date": base.get("end_date"),
+        "date_text": base.get("date_text"),
+        "time_text": base.get("time_text"),
+        "recording_url": recording_url,
+        "registration_url": base.get("registration_url"),
+        "speakers": speakers,
+        "moderator": moderator,
+        "description_excerpt": base.get("description_excerpt"),
+    }
+    return {
+        "external_id": stable_external_id("webinar", canonical_url),
+        "content_type": "webinar",
+        "series": "Urban Lunch Talks",
+        "episode_number": episode_number,
+        "title": title,
+        "canonical_url": canonical_url,
+        "source_event_id": base["external_id"],
+        "event_date": base.get("start_date"),
+        "end_date": base.get("end_date"),
+        "date_text": base.get("date_text"),
+        "time_text": base.get("time_text"),
+        "recording_url": recording_url,
+        "recording_status": "available" if recording_url else "not_found",
+        "registration_url": base.get("registration_url"),
+        "speakers_json": json.dumps(speakers, ensure_ascii=False),
+        "moderator": moderator,
+        "description_excerpt": base.get("description_excerpt"),
+        "source_status": "active",
+        "retrieved_at": retrieved_at,
+        "content_hash": hash_payload(source_payload),
+    }
+
+
+def _clean_newsletter_url(base_url: str, href: str) -> str:
+    absolute = urljoin(base_url, href.strip())
+    parts = urlsplit(absolute)
+    clean_query = urlencode([(key, value) for key, value in parse_qsl(parts.query) if key.lower() != "e"])
+    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), parts.path, clean_query, ""))
+
+
+def _newsletter_period(label: str) -> tuple[int | None, int | None, str, str | None]:
+    lowered = label.casefold()
+    year_match = re.search(r"\b(20\d{2})\b", label)
+    year = int(year_match.group(1)) if year_match else None
+    month: int | None = None
+    period_type = "unknown"
+    for name, number in PORTUGUESE_MONTHS.items():
+        if name in lowered:
+            month = number
+            period_type = "month"
+            break
+    if month is None:
+        for name, number in PORTUGUESE_SEASONS.items():
+            if name in lowered:
+                month = number
+                period_type = "season"
+                break
+    sort_date = f"{year:04d}-{month:02d}-01" if year and month else None
+    return year, month, period_type, sort_date
+
+
+def parse_regional_newsletters(html: str, fetched_url: str, retrieved_at: str) -> list[dict[str, Any]]:
+    soup = _soup(html)
+    source_page_url = _canonical_url(soup, fetched_url)
+    heading = next(
+        (
+            h
+            for h in soup.find_all(["h2", "h3", "h4"])
+            if re.fullmatch(r"newsletters", normalise_space(h.get_text(" ", strip=True)) or "", flags=re.I)
+        ),
+        None,
+    )
+    if not heading:
+        raise ValueError("Regional DUT page has no NEWSLETTERS section")
+    level = int(heading.name[1])
+    records: list[dict[str, Any]] = []
+    seen: set[tuple[str, str]] = set()
+    for element in heading.find_all_next():
+        if element is heading:
+            continue
+        if element.name in {"h2", "h3", "h4"} and int(element.name[1]) <= level:
+            break
+        if element.name != "a" or not element.get("href"):
+            continue
+        label = normalise_space(element.get_text(" ", strip=True))
+        if not label:
+            continue
+        archive_url = _clean_newsletter_url(source_page_url, element.get("href", ""))
+        host = urlsplit(archive_url).netloc.lower()
+        if not any(host == suffix or host.endswith("." + suffix) for suffix in NEWSLETTER_HOST_SUFFIXES):
+            continue
+        key = (label.casefold(), archive_url)
+        if key in seen:
+            continue
+        seen.add(key)
+        issue_year, issue_month, period_type, sort_date = _newsletter_period(label)
+        identity = f"{archive_url}#{label.casefold()}"
+        source_payload = {
+            "issue_label": label,
+            "issue_year": issue_year,
+            "issue_month": issue_month,
+            "issue_period": period_type,
+            "issue_sort_date": sort_date,
+            "archive_url": archive_url,
+            "source_page_url": source_page_url,
+        }
+        records.append(
+            {
+                "external_id": stable_external_id("newsletter", identity),
+                "content_type": "newsletter",
+                "issue_label": label,
+                "issue_year": issue_year,
+                "issue_month": issue_month,
+                "issue_period": period_type,
+                "issue_sort_date": sort_date,
+                "archive_url": archive_url,
+                "archive_host": host,
+                "source_page_url": source_page_url,
+                "source_status": "active",
+                "retrieved_at": retrieved_at,
+                "content_hash": hash_payload(source_payload),
+            }
+        )
+    return sorted(
+        records,
+        key=lambda item: (item.get("issue_sort_date") or "0000-00-00", item["issue_label"]),
+        reverse=True,
+    )
+
