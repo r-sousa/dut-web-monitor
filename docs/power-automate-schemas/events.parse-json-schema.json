@@ -1,0 +1,16 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "external_id": {"type": "string"}, "content_type": {"type": "string"},
+      "title": {"type": "string"}, "canonical_url": {"type": "string"},
+      "start_date": {"type": ["string", "null"]}, "end_date": {"type": ["string", "null"]},
+      "date_text": {"type": ["string", "null"]}, "time_text": {"type": ["string", "null"]},
+      "location": {"type": ["string", "null"]}, "mode": {"type": "string"},
+      "registration_url": {"type": ["string", "null"]}, "description_excerpt": {"type": ["string", "null"]},
+      "source_status": {"type": "string"}, "retrieved_at": {"type": "string"}, "content_hash": {"type": "string"}
+    },
+    "required": ["external_id", "content_type", "title", "canonical_url", "source_status", "content_hash"]
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "external_id": "dut-call-dut-call-2026-sample",
+    "content_type": "call",
+    "title": "DUT Call 2026",
+    "subtitle": "A funding opportunity for transformative urban research and innovation",
+    "canonical_url": "https://dutpartnership.eu/calls/dut-call-2026",
+    "status": "forthcoming",
+    "opening_date": "2026-09-01",
+    "stage1_deadline": "2026-11-17",
+    "stage2_opening": "2027-02-01",
+    "stage2_deadline": "2027-04-15",
+    "participating_countries_text": "Austria, Belgium, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Kingdom of the Netherlands, Latvia, Lithuania, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland and Türkiye",
+    "topics_json": "[]",
+    "documents_json": "[]",
+    "source_description": null,
+    "source_status": "active",
+    "retrieved_at": "2026-08-05T22:30:00Z",
+    "content_hash": "sha256:sample-call-2026"
+  }
+]

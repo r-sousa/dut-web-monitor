@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DUT event record",
+  "type": "object",
+  "required": ["external_id", "content_type", "title", "canonical_url", "source_status", "content_hash"],
+  "properties": {
+    "external_id": {"type": "string"},
+    "content_type": {"const": "event"},
+    "title": {"type": "string"},
+    "canonical_url": {"type": "string", "format": "uri"},
+    "start_date": {"type": ["string", "null"]},
+    "end_date": {"type": ["string", "null"]},
+    "location": {"type": ["string", "null"]},
+    "mode": {"enum": ["online", "on-site"]},
+    "source_status": {"type": "string"},
+    "content_hash": {"type": "string", "pattern": "^sha256:"}
+  }
+}

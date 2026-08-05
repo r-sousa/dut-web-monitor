@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "external_id": {"type": "string"}, "content_type": {"type": "string"},
+      "title": {"type": "string"}, "subtitle": {"type": ["string", "null"]},
+      "canonical_url": {"type": "string"}, "status": {"type": ["string", "null"]},
+      "opening_date": {"type": ["string", "null"]}, "stage1_deadline": {"type": ["string", "null"]},
+      "stage2_opening": {"type": ["string", "null"]}, "stage2_deadline": {"type": ["string", "null"]},
+      "participating_countries_text": {"type": ["string", "null"]},
+      "topics_json": {"type": "string"}, "documents_json": {"type": "string"},
+      "source_description": {"type": ["string", "null"]}, "source_status": {"type": "string"},
+      "retrieved_at": {"type": "string"}, "content_hash": {"type": "string"}
+    },
+    "required": ["external_id", "content_type", "title", "canonical_url", "source_status", "content_hash"]
+  }
+}

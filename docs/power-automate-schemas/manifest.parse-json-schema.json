@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {"type": "string"},
+    "dataset_version": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "dataset_hash": {"type": "string"},
+    "status": {"type": "string"},
+    "changed_datasets": {"type": "array", "items": {"type": "string"}},
+    "record_counts": {"type": "object"},
+    "dataset_hashes": {"type": "object"},
+    "files": {"type": "object"},
+    "source": {"type": "string"},
+    "errors": {"type": "array"}
+  },
+  "required": ["schema_version", "dataset_version", "dataset_hash", "status", "changed_datasets", "record_counts", "files"]
+}

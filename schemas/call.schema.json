@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DUT call record",
+  "type": "object",
+  "required": ["external_id", "content_type", "title", "canonical_url", "source_status", "content_hash"],
+  "properties": {
+    "external_id": {"type": "string"},
+    "content_type": {"const": "call"},
+    "title": {"type": "string"},
+    "canonical_url": {"type": "string", "format": "uri"},
+    "status": {"type": ["string", "null"]},
+    "opening_date": {"type": ["string", "null"]},
+    "stage1_deadline": {"type": ["string", "null"]},
+    "stage2_opening": {"type": ["string", "null"]},
+    "stage2_deadline": {"type": ["string", "null"]},
+    "topics_json": {"type": "string"},
+    "documents_json": {"type": "string"},
+    "source_status": {"type": "string"},
+    "content_hash": {"type": "string", "pattern": "^sha256:"}
+  }
+}

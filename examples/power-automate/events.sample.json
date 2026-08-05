@@ -1,0 +1,19 @@
+[
+  {
+    "external_id": "dut-event-dut-call-2026-info-day-sample",
+    "content_type": "event",
+    "title": "DUT Call 2026 – Info Day",
+    "canonical_url": "https://dutpartnership.eu/events",
+    "start_date": "2026-09-09",
+    "end_date": null,
+    "date_text": "9 Sep 2026",
+    "time_text": null,
+    "location": "Online",
+    "mode": "online",
+    "registration_url": null,
+    "description_excerpt": null,
+    "source_status": "active",
+    "retrieved_at": "2026-08-05T22:30:00Z",
+    "content_hash": "sha256:sample-event-info-day"
+  }
+]

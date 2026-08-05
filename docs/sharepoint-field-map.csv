@@ -1,0 +1,64 @@
+List,Display Name,Internal Name,Type,Required,Control,Notes
+DUT_Sync_Control,Title,Title,Single line text,Yes,Local,Use Main
+DUT_Sync_Control,Last Dataset Hash,LastDatasetHash,Single line text,No,Flow,Compared with manifest.dataset_hash
+DUT_Sync_Control,Last Successful Sync,LastSuccessfulSync,Date and time,No,Flow,UTC
+DUT_Sync_Control,Last Dataset Version,LastDatasetVersion,Single line text,No,Flow,manifest.dataset_version
+DUT_Sync_Control,Last Status,LastStatus,Choice,No,Flow,valid; partial; failed
+DUT_Sync_Control,Last Error,LastError,Multiple lines text,No,Flow,Error summary
+DUT_Calls,Title,Title,Single line text,Yes,GitHub,Source title
+DUT_Calls,Subtitle,Subtitle,Multiple lines text,No,GitHub,Source subtitle
+DUT_Calls,Source Description,SourceDescription,Multiple lines text,No,GitHub,Meta description if exposed
+DUT_Calls,Participating Countries,ParticipatingCountriesText,Multiple lines text,No,GitHub,Source text
+DUT_Calls,Retrieved At,RetrievedAt,Date and time,No,GitHub,First retrieval for unchanged version
+DUT_Calls,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
+DUT_Calls,Source URL,SourceURL,Hyperlink,Yes,GitHub,Canonical DUT URL
+DUT_Calls,Source Status,SourceStatus,Choice,Yes,GitHub,active; possibly_removed; archived
+DUT_Calls,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
+DUT_Calls,Call Status,CallStatus,Choice,No,GitHub,forthcoming; open; closed; evaluation; results
+DUT_Calls,Opening Date,OpeningDate,Date only,No,GitHub,
+DUT_Calls,Stage 1 Deadline,Stage1Deadline,Date only,No,GitHub,High materiality
+DUT_Calls,Stage 2 Opening,Stage2Opening,Date only,No,GitHub,
+DUT_Calls,Stage 2 Deadline,Stage2Deadline,Date only,No,GitHub,High materiality
+DUT_Calls,Topics JSON,TopicsJSON,Multiple lines text,No,GitHub,Plain text
+DUT_Calls,Documents JSON,DocumentsJSON,Multiple lines text,No,GitHub,Plain text
+DUT_Calls,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten by import
+DUT_Calls,National Funding Information,NationalFundingInformation,Multiple lines text,No,CCDR,Never overwritten by import
+DUT_Calls,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
+DUT_Calls,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
+DUT_Events,Title,Title,Single line text,Yes,GitHub,
+DUT_Events,Retrieved At,RetrievedAt,Date and time,No,GitHub,First retrieval for unchanged version
+DUT_Events,Date Text,DateText,Single line text,No,GitHub,Original display text
+DUT_Events,Description Excerpt,DescriptionExcerpt,Multiple lines text,No,GitHub,Source excerpt
+DUT_Events,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
+DUT_Events,Source URL,SourceURL,Hyperlink,Yes,GitHub,
+DUT_Events,Source Status,SourceStatus,Choice,Yes,GitHub,
+DUT_Events,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
+DUT_Events,Start Date,StartDate,Date only,No,GitHub,High materiality
+DUT_Events,End Date,EndDate,Date only,No,GitHub,
+DUT_Events,Time Text,TimeText,Single line text,No,GitHub,
+DUT_Events,Location,Location,Single line text,No,GitHub,
+DUT_Events,Mode,EventMode,Choice,No,GitHub,online; on-site
+DUT_Events,Registration URL,RegistrationURL,Hyperlink,No,GitHub,
+DUT_Events,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
+DUT_Events,Regional Relevance,RegionalRelevance,Multiple lines text,No,CCDR,Never overwritten
+DUT_Events,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
+DUT_Events,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
+DUT_Publications,Title,Title,Single line text,Yes,GitHub,
+DUT_Publications,Retrieved At,RetrievedAt,Date and time,No,GitHub,First retrieval for unchanged version
+DUT_Publications,File Type,FileType,Single line text,No,GitHub,Usually pdf
+DUT_Publications,File Size Text,FileSizeText,Single line text,No,GitHub,As displayed at source
+DUT_Publications,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
+DUT_Publications,Document URL,DocumentURL,Hyperlink,Yes,GitHub,
+DUT_Publications,Library URL,SourceURL,Hyperlink,Yes,GitHub,
+DUT_Publications,Category,PublicationCategory,Single line text,No,GitHub,
+DUT_Publications,Source Status,SourceStatus,Choice,Yes,GitHub,
+DUT_Publications,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
+DUT_Publications,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
+DUT_Publications,Regional Relevance,RegionalRelevance,Multiple lines text,No,CCDR,Never overwritten
+DUT_Publications,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
+DUT_Publications,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
+DUT_Import_Exceptions,Title,Title,Single line text,Yes,Flow,External ID or URL
+DUT_Import_Exceptions,Dataset,Dataset,Choice,Yes,Flow,calls; events; publications; manifest
+DUT_Import_Exceptions,Error Time,ErrorTime,Date and time,Yes,Flow,UTC
+DUT_Import_Exceptions,Error Detail,ErrorDetail,Multiple lines text,Yes,Flow,
+DUT_Import_Exceptions,Payload,Payload,Multiple lines text,No,Flow,Truncated if necessary

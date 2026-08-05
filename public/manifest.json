@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "dataset_version": "bootstrap",
+  "generated_at": "2026-08-05T22:30:00Z",
+  "dataset_hash": "sha256:bootstrap",
+  "status": "valid",
+  "changed_datasets": [],
+  "record_counts": {"calls": 0, "events": 0, "publications": 0},
+  "dataset_hashes": {"calls": "sha256:bootstrap", "events": "sha256:bootstrap", "publications": "sha256:bootstrap"},
+  "files": {
+    "calls": "calls.json",
+    "events": "events.json",
+    "publications": "publications.json",
+    "changes": "changes-latest.json"
+  },
+  "source": "https://dutpartnership.eu",
+  "errors": []
+}

@@ -1,0 +1,14 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "external_id": {"type": "string"}, "content_type": {"type": "string"},
+      "title": {"type": "string"}, "category": {"type": "string"},
+      "document_url": {"type": "string"}, "file_type": {"type": "string"},
+      "file_size_text": {"type": ["string", "null"]}, "canonical_url": {"type": "string"},
+      "source_status": {"type": "string"}, "retrieved_at": {"type": "string"}, "content_hash": {"type": "string"}
+    },
+    "required": ["external_id", "content_type", "title", "category", "document_url", "source_status", "content_hash"]
+  }
+}
