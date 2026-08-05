@@ -1,1 +1,821 @@
-[]
+[
+  {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2022-3a07e90dbb",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2023-45f43e0475",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2024-d6eb5eee72",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2025-c568a2a9e1",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2026-dcf1208cd1",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-15-minute-city-agora-dialogue-call-agenda-urban-mobility-transition-d8590cc741",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-acute-uera-twg-urban-accessibility-and-connectivity-research-seminar-9a39d39324",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-dialogue-hot-topics-urban-transitions-2023-81a57942f0",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-strategic-dialogue-2024-ed0604e0c7",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-strategic-dialogue-a804ec0e68",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-strategic-dialogue-dut-conference-2024-31a66c1049",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-supporting-urban-transitions-system-innovation-f982e9442b",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-thematic-dialogue-15-minute-city-concept-all-d4ad27d36b",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-thematic-dialogue-circular-urban-economies-c29fe5b603",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-thematic-dialogue-critical-issues-15-minute-city-a19f9262b2",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-thematic-dialogue-making-space-regenerative-urbanism-cc0d67ef4d",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-thematic-dialogue-ped-30-our-journey-towards-climate-neutrality-c1c4ee403d",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-agora-thematic-dialogue-quo-vadis-ped-c632661a0a",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-boosting-local-and-regional-cooperation-clean-energy-transition-and-improved-energy-security-789c4db646",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-bridge-cities-7ef0dc4a11",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-cetpartnership-and-dut-set-plan-conference-9ec811bb02",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-cities-mission-week-turin-da30aac9e8",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-cities-move-driving-innovative-transition-urban-mobility-5e1d59e25a",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2022-info-day-ea55ab0cf8",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2022-online-final-event-invitation-only-3b6266ef0a",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2022-projects-kick-off-087478fc0e",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2023-info-day-805ff5167c",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2023-online-midterm-event-invitation-only-7c69c762a7",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2023-projects-kick-event-online-ea5634dd16",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2024-info-day-22bc466d0d",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2024-projects-kick-event-invitation-only-8b9832598e",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2025-info-day-1119dd7d14",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-call-2026-info-day-201cda4899",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-cities-mission-conference-2970d91e9f",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-city-panel-c5636da8b9",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-city-panel-meeting-2024-e0bffc28a7",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-city-panel-online-meeting-cities-learning-cities-08b08dfe8a",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-city-panel-spring-2025-52b31f155c",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-city-panel-vienna-283295542f",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-conference-2024-e0e15f404b",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-conference-2026-bc483ba615",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-innovate4cities-i4c-2026-d00f251e69",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-launch-conference-a2859661d5",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-online-city-panel-3b743a054a",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-ped-conference-f67242fca6",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-projects-event-2025-f69096f835",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-rics-european-education-forum-c77dabce15",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-scientific-consultation-workshop-ba26645311",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-scientific-consultation-workshop-call-2024-800ff52ce1",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-smart-city-expo-world-congress-a10d281155",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-strategic-agora-dialogue-shaping-202728-call-priorities-54bdfc82d4",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-dut-sustainability-research-and-innovation-congress-2024-f233eda124",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-duts-mapping-15-minute-city-practices-results-webinar-42a62778b2",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-how-make-urban-resilience-work-city-case-studies-and-role-research-and-innovation-dut-a2d8dbbb09",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-knowlege-hub-webinar-rethinking-measurement-accessibility-and-proximity-6854bd2bf0",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-knowlege-hub-webinar-strategies-address-neglected-social-groups-and-spatial-contexts-b491bd439a",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-mapping-circular-urban-economy-cases-across-europe-results-webinar-12534772a0",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-mission-led-community-change-masterclass-dc9865c62c",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-placemaking-week-europe-2024-8f5dfe4011",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-positive-energy-districts-accelerating-journey-towards-urban-energy-transitions-a870544e53",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-smart-city-expo-world-congress-2024-88ce0791d7",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-smart-funding-projects-supporting-urban-transitions-f04806211e",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-sustainable-and-climate-neutral-cities-inclusive-and-equitable-urban-future-56c80a3d07",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-training-dut-projects-implementing-urban-living-labs-2538a5e947",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-uera-conference-2026-de8b8e6813",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-doers-community-2-info-webinar-6cece5fcc6",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-doers-community-2-kick-off-1df2c2e8c1",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-future-25-59e35c596a",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-living-labs-experiments-designing-radical-urban-transitions-3486dba59d",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-23-role-activism-urban-transitions-63068a2bd0",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-24-exploring-gender-perspectives-urban-planning-migration-and-integration-a0802ad48f",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-25-innovative-housing-strategies-social-integration-3a3b14d3d9",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-26-envisioning-sustainable-future-peds-and-climate-neutral-cities-694751eb17",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-27-new-perspectives-and-approaches-urban-transitions-what-needed-policy-3a009c7766",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-28-repurposing-spaces-neighbourhoods-bridging-local-challenges-societal-bf9b9309b6",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-29-tod-revisited-urban-planning-and-design-station-near-areas-less-car-13e2444f12",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-30-advocating-green-blue-infrastructure-urban-planning-62fca9d041",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-31-15-minute-city-city-everyone-c500cb0cc0",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-32-urban-doers-local-initiatives-driving-cities-transformation-395b8394f0",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-33-15-minute-city-what-role-does-community-engagement-play-72b3a705d0",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-34-reimagining-relationship-between-businesses-cities-and-biodiversity-6f61c2f44d",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-35-15-minute-city-role-logistics-a8cabcb9e8",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-36-serious-gaming-way-understanding-world-ca8a023f3b",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-37-production-city-key-circular-urban-economy-8b4350d1a2",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-38-engaging-citizens-climate-action-b4bf162582",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-39-can-urban-experiments-breach-car-dominance-cities-f1e47e9315",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-40-future-urban-water-resilience-0e93f39e9e",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-42-soil-city-lessons-urban-food-production-7e6b45e966",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-43-scaling-positive-energy-districts-8735953f44",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-44-sharing-city-circular-lifestyles-practice-4a4ea44255",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-45-eu-powered-people-role-energy-communities-75c3e33281",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-46-boosting-active-mobility-15-minute-city-11e673579a",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-47-urban-nature-restoration-practice-5aa1fab636",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-transitions-mission-global-innovation-summit-2024-49b38a14e4",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-urban-transitions-mission-global-innovation-summit-2025-502dc2b94f",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-webinar-survey-about-european-cities-work-urban-nature-plans-f8d8798eed",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-workshop-climate-neutral-districts-924ae43290",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-workshop-how-facilitate-transition-towards-sustainable-urban-logistics-a1f5b1940b",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-workshop-ull-managers-dut-projects-b68cb7254c",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-world-urban-forum-2024-b376da5d75",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-driving-20urban-20transitions-20-28dut-29-20feedback-20to-20the-20circular-20economy-20act-pdf-a3a6ef2fbe",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-15mc-mapping-digital-final-pdf-23526a9281",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-15mc-position-paper-digital-final-pdf-7eca6fcfef",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-20call-202023-20projects-20catalogue-pdf-910c76a0d4",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20five-20hard-20truths-20about-20active-20travel-20in-202026-may2026-pdf-29270d545a",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20peri-urbanity-20and-20the-2015minutecity-pdf-dcc5f0f436",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-20knowledge-20hub-cue-20how-20to-20assess-20circularity-20in-20the-20urban-20built-20environment-0-pdf-93280267b9",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-20knowledge-20hub-cue-20strategies-20for-20increased-20social-20justice-20in-20urban-20planning-20and-20local-20governance-may2026-0-pdf-0530516547",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-20knowledge-20hub-peds-20grid-20partners-20or-20grid-20problems-may-202026-pdf-d41770131b",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-20roadmap-202025-digital-pdf-2ca7af43f5",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-mapping-circular-urban-economy-cases-final-low-res-pdf-6efb943438",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-trip-web-20-281-29-pdf-55dec87914",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-urban-doers-community-policy-recommendations-digital-pdf-be61f96d4d",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dutpositionpaper-towardsregenerativeneighbourhoods-v2-pdf-607cc4ed10",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-europe-e2-80-99s-20urban-20answer-20to-20a-20fracturing-20world-20-20how-20a-20strong-20co-funded-20partnership-20on-20cities-20will-20position-20europe-20globally-pdf-40781256b9",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-ped-20framework-203-0-pdf-682c3f33c6",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-project-catalogue-edited-09-2024-one-page-pdf-954aff844c",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  }
+]
