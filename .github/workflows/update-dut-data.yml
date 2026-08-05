@@ -42,6 +42,8 @@ jobs:
           python -m json.tool public/calls.json >/dev/null
           python -m json.tool public/events.json >/dev/null
           python -m json.tool public/publications.json >/dev/null
+          python -m json.tool public/webinars.json >/dev/null
+          python -m json.tool public/newsletters.json >/dev/null
           python -m json.tool public/changes-latest.json >/dev/null
 
       - name: Commit material data changes
