@@ -1,0 +1,56 @@
+name: Apply parser quality fix
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/apply-parser-fix.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Expand tested parser patch
+        shell: bash
+        run: |
+          cat .patch/parser-fix.part* > /tmp/parser-fix.b64
+          base64 --decode /tmp/parser-fix.b64 > /tmp/parser-fix.tar.gz
+          tar -xzf /tmp/parser-fix.tar.gz -C .
+          rm -rf .patch
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install and test
+        run: |
+          python -m pip install -e ".[dev]"
+          pytest -q
+
+      - name: Refresh live DUT datasets
+        run: |
+          python -m dut_monitor.runner --output public
+          python -m json.tool public/manifest.json >/dev/null
+          python -m json.tool public/calls.json >/dev/null
+          python -m json.tool public/events.json >/dev/null
+          python -m json.tool public/publications.json >/dev/null
+          python -m json.tool public/changes-latest.json >/dev/null
+
+      - name: Commit tested parser and refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- .patch src/dut_monitor/parsers.py tests/test_parsers.py schemas/event.schema.json docs/sharepoint-field-map.csv public
+          git commit -m "fix: harden live DUT parsing and refresh data"
+          git push
