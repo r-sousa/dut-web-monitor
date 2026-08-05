@@ -37,7 +37,7 @@ DUT_Events,Start Date,StartDate,Date only,No,GitHub,High materiality
 DUT_Events,End Date,EndDate,Date only,No,GitHub,
 DUT_Events,Time Text,TimeText,Single line text,No,GitHub,
 DUT_Events,Location,Location,Single line text,No,GitHub,
-DUT_Events,Mode,EventMode,Choice,No,GitHub,online; on-site
+DUT_Events,Mode,EventMode,Choice,No,GitHub,online; on-site; hybrid; unspecified
 DUT_Events,Registration URL,RegistrationURL,Hyperlink,No,GitHub,
 DUT_Events,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
 DUT_Events,Regional Relevance,RegionalRelevance,Multiple lines text,No,CCDR,Never overwritten

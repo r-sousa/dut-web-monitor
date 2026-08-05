@@ -5,7 +5,7 @@
     "title": "DUT Call 2022",
     "subtitle": "Funded projects Call statistics",
     "canonical_url": "https://dutpartnership.eu/calls/dut-call-2022",
-    "status": "open",
+    "status": "results",
     "opening_date": null,
     "stage1_deadline": null,
     "stage2_opening": null,
@@ -15,8 +15,8 @@
     "documents_json": "[{\"title\": \"DUT Call 2022_Call Text (pdf 1.53 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT_Call_2022_call_text.pdf\"}, {\"title\": \"DUT Call 2022_Projects suggested for funding (pdf 189.23 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT2022-Projects-suggested-for-Funding.pdf\"}, {\"title\": \"Projects Catalogue DUT Call 2022 (pdf 3.32 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/Project-Catalogue-Edited-09.2024-one-page.pdf\"}]",
     "source_description": null,
     "source_status": "active",
-    "retrieved_at": "2026-08-05T23:01:38Z",
-    "content_hash": "sha256:157c95198b90b591446d1f5b320c17ae5fb939b46346e7c7987a89bcb7b5f517"
+    "retrieved_at": "2026-08-05T23:24:04Z",
+    "content_hash": "sha256:c8033b140b6a983bbc4572a509d297900945ee47cac7c3ea7c5fcdddf1a7a4e2"
   },
   {
     "external_id": "dut-call-dut-call-2023-45f43e0475",
@@ -24,7 +24,7 @@
     "title": "DUT Call 2023",
     "subtitle": "People-centred urban transformation",
     "canonical_url": "https://dutpartnership.eu/calls/dut-call-2023",
-    "status": "open",
+    "status": "results",
     "opening_date": null,
     "stage1_deadline": null,
     "stage2_opening": null,
@@ -34,8 +34,8 @@
     "documents_json": "[{\"title\": \"DUT Call 2023_Call Text (pdf 1.37 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT_Call_2023_call_text.pdf\"}, {\"title\": \"DUT Call 2023_Projects suggested for funding (pdf 187.26 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT-2023-Projects-suggested-for-Funding.pdf\"}, {\"title\": \"DUT Call 2023 Projects Catalogue (pdf 4.94 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-09/DUT%20Call%202023%20Projects%20Catalogue.pdf\"}]",
     "source_description": null,
     "source_status": "active",
-    "retrieved_at": "2026-08-05T23:01:38Z",
-    "content_hash": "sha256:42bb4ba4e71cd27cc00fd6d00a37f3f38c29140b98eab02efb801c199a034239"
+    "retrieved_at": "2026-08-05T23:24:04Z",
+    "content_hash": "sha256:4b349a80d22b5ffb3734f3aad259cb02fecf97d43f339690198291ff1dc09d67"
   },
   {
     "external_id": "dut-call-dut-call-2024-d6eb5eee72",
@@ -43,8 +43,8 @@
     "title": "DUT Call 2024",
     "subtitle": "A funding opportunity for sustainable urban transitions",
     "canonical_url": "https://dutpartnership.eu/calls/dut-call-2024",
-    "status": "open",
-    "opening_date": "2024-11-14",
+    "status": "results",
+    "opening_date": "2024-09-02",
     "stage1_deadline": "2024-11-14",
     "stage2_opening": "2025-02-01",
     "stage2_deadline": "2025-04-24",
@@ -53,8 +53,8 @@
     "documents_json": "[{\"title\": \"DUT Call 2024_Call Text (pdf 3.39 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT_Call_2024_call_text.pdf\"}, {\"title\": \"DUT Call 2024_Projects suggested for funding (pdf 185.94 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-10/DUT%202024%20Projects%20suggested%20for%20Funding_1.1.pdf\"}]",
     "source_description": null,
     "source_status": "active",
-    "retrieved_at": "2026-08-05T23:01:38Z",
-    "content_hash": "sha256:ff89a1354f0f620fb622164817c49a1defc7ea6cf37e3b27a3537721c83b6dbb"
+    "retrieved_at": "2026-08-05T23:24:04Z",
+    "content_hash": "sha256:4d95204dcdcd60b25793f36d71a56c642f67d6692528ded0387342decb16006f"
   },
   {
     "external_id": "dut-call-dut-call-2025-c568a2a9e1",
@@ -62,8 +62,8 @@
     "title": "DUT Call 2025",
     "subtitle": "A funding opportunity for climate neutral and resilient cities",
     "canonical_url": "https://dutpartnership.eu/calls/dut-call-2025",
-    "status": "open",
-    "opening_date": "2025-11-17",
+    "status": "results",
+    "opening_date": "2025-09-01",
     "stage1_deadline": "2025-11-17",
     "stage2_opening": "2026-02-20",
     "stage2_deadline": "2026-04-23",
@@ -72,8 +72,8 @@
     "documents_json": "[{\"title\": \"DUT Call 2025_Call Text (pdf 2.24 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-10/DUT%20Call%202025_Call%20Text_0.pdf\"}]",
     "source_description": null,
     "source_status": "active",
-    "retrieved_at": "2026-08-05T23:01:38Z",
-    "content_hash": "sha256:a0ec7c37193812d02e2177ff99f568d70c73be8a339286e5bd6622cc8f7c40da"
+    "retrieved_at": "2026-08-05T23:24:04Z",
+    "content_hash": "sha256:b18bfc970769824069de5cb7f3821ca77fbefd3703d3ad492bc4a5335a54f00e"
   },
   {
     "external_id": "dut-call-dut-call-2026-dcf1208cd1",
@@ -87,11 +87,11 @@
     "stage2_opening": "2027-02-01",
     "stage2_deadline": "2027-04-15",
     "participating_countries_text": "The list of involved countries and funding agencies for the DUT Call 2026 will not be final until 1 September, when the call launches officially. Please refer to the National Annex (Annex A in the call text) for a list of already confirmed funding agencies.",
-    "topics_json": "[\"a more “research-oriented approach” (ROA) to support projects aimed at producing knowledge, analysing data, better understanding and modelling phenomena, and developing expertise and tools that will be useful to stakeholders, practitioners and policymakers. This R&I orientation welcomes proposals mainly focused on strategic and/or applied research;\", \"a more “innovation-oriented approach” (IOA) to support projects aimed at developing or improving practical, operational solutions – technological and organisational – for companies, local communities and authorities in charge of urban transport and urban planning, as well as management and testing of such solutions. This R&I orientation welcomes proposals mainly focused on applied research and innovation.\", \"Applicants are defined as organisations/institutions/companies (i.e. legal entities) that apply for funding. Applicants can be but are not limited to: research organisations (higher education institutions including universities, university colleges; research institutes or other entities with research undertakings), companies and commercial organisations , urban government authorities (such as local and regional government institutions, municipalities and municipal organisations, city authorities, urban public administrations, infrastructure and service providers), consumers and civil society representatives (e.g. local and community organisations, non-governmental organisations, not-for-profit organisations, advocacy and activist groups, citizens’ representatives, neighbourhood initiatives, social innovators, social entrepreneurs, etc.). From the culture and creative sectors (e.g. artists and designers).\", \"research organisations (higher education institutions including universities, university colleges; research institutes or other entities with research undertakings),\", \"companies and commercial organisations ,\", \"urban government authorities (such as local and regional government institutions, municipalities and municipal organisations, city authorities, urban public administrations, infrastructure and service providers),\", \"consumers and civil society representatives (e.g. local and community organisations, non-governmental organisations, not-for-profit organisations, advocacy and activist groups, citizens’ representatives, neighbourhood initiatives, social innovators, social entrepreneurs, etc.).\", \"From the culture and creative sectors (e.g. artists and designers).\", \"DUT Call 2026_Call Text.pdf (pdf 3.16 MB)\", \"Legal notice\", \"Contact\", \"Privacy Policy\", \"Press\", \"Accessibilty\", \"YouTube\", \"LinkedIn\"]",
+    "topics_json": "[]",
     "documents_json": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.16 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-08/DUT%20Call%202026_Call%20Text.pdf\"}]",
     "source_description": null,
     "source_status": "active",
-    "retrieved_at": "2026-08-05T23:01:38Z",
-    "content_hash": "sha256:b9fc2d6e720b9869c81cc719444202225f09bbab5ac765d8aa62d756b55bf3d8"
+    "retrieved_at": "2026-08-05T23:24:04Z",
+    "content_hash": "sha256:0ba86b86886ad4aa1a4f8779dde8b977338ae9100d71964d6b8b2060910486b6"
   }
 ]

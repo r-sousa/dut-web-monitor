@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime
+from datetime import date, datetime
 from typing import Any, Iterable
 from urllib.parse import urlsplit
 
@@ -11,7 +11,12 @@ from dateutil import parser as date_parser
 
 from .util import canonicalise_url, hash_payload, normalise_space, stable_external_id
 
-STATUS_WORDS = ("forthcoming", "open", "closed", "evaluation", "results")
+MONTH_PATTERN = (
+    r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|"
+    r"Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
+)
+DATE_WITH_YEAR_PATTERN = rf"(?:\d{{1,2}}\s+)?{MONTH_PATTERN}\s+20\d{{2}}"
+FULL_DATE_PATTERN = rf"\d{{1,2}}\s+{MONTH_PATTERN}\s+20\d{{2}}"
 
 
 def _soup(html: str) -> BeautifulSoup:
@@ -61,12 +66,34 @@ def _meta_description(soup: BeautifulSoup) -> str | None:
     return normalise_space(meta.get("content")) if meta else None
 
 
+def _content_root(soup: BeautifulSoup) -> Tag | BeautifulSoup:
+    return soup.find("main") or soup.find("article") or soup.body or soup
+
+
 def _first_meaningful_text_after(element: Tag) -> str | None:
-    for sibling in element.find_all_next(limit=8):
-        if sibling.name in {"p", "div", "h2", "h3"}:
-            text = normalise_space(sibling.get_text(" ", strip=True))
-            if text and text.lower() not in {"page content", "funded"}:
-                return text
+    excluded = {
+        "page content",
+        "funded",
+        "funded projects",
+        "call statistics",
+        "online",
+        "on-site",
+        "onsite",
+        "hybrid",
+        "date",
+        "time",
+        "location",
+    }
+    for candidate in element.find_all_next(limit=30):
+        if candidate.name in {"h2", "h3"}:
+            break
+        if candidate.name not in {"p", "div"}:
+            continue
+        text = normalise_space(candidate.get_text(" ", strip=True))
+        if not text or text.lower() in excluded:
+            continue
+        if 12 <= len(text) <= 400:
+            return text
     return None
 
 
@@ -78,14 +105,36 @@ def _text_under_heading(soup: BeautifulSoup, heading_pattern: str) -> str | None
     )
     if not heading:
         return None
+    level = int(heading.name[1])
     chunks: list[str] = []
-    for sibling in heading.find_next_siblings():
-        if sibling.name in {"h2", "h3", "h4"}:
+    for element in heading.find_all_next():
+        if element is heading:
+            continue
+        if element.name in {"h2", "h3", "h4"} and int(element.name[1]) <= level:
             break
-        text = normalise_space(sibling.get_text(" ", strip=True))
-        if text:
-            chunks.append(text)
+        if element.name in {"p", "li"}:
+            text = normalise_space(element.get_text(" ", strip=True))
+            if text and text not in chunks:
+                chunks.append(text)
     return normalise_space(" ".join(chunks))
+
+
+def _list_items_under_heading(heading: Tag, limit: int = 12) -> list[str]:
+    level = int(heading.name[1])
+    items: list[str] = []
+    for element in heading.find_all_next():
+        if element is heading:
+            continue
+        if element.name in {"h2", "h3", "h4"} and int(element.name[1]) <= level:
+            break
+        if element.name != "li":
+            continue
+        text = normalise_space(element.get_text(" ", strip=True))
+        if text and text not in items:
+            items.append(text)
+        if len(items) >= limit:
+            break
+    return items
 
 
 def _links(soup: BeautifulSoup, base_url: str, suffix: str | None = None) -> list[dict[str, str]]:
@@ -106,9 +155,7 @@ def _parse_iso_date(value: str | None) -> str | None:
     if not value:
         return None
     cleaned = normalise_space(value) or ""
-    # A month/year value is a period marker rather than an exact day. Use day 1
-    # deterministically instead of dateutil inheriting today's day-of-month.
-    if re.fullmatch(r"[A-Za-z]+\s+20\d{2}", cleaned):
+    if re.fullmatch(rf"{MONTH_PATTERN}\s+20\d{{2}}", cleaned, flags=re.I):
         cleaned = f"1 {cleaned}"
     try:
         parsed = date_parser.parse(cleaned, fuzzy=True, dayfirst=True)
@@ -117,12 +164,100 @@ def _parse_iso_date(value: str | None) -> str | None:
     return parsed.date().isoformat()
 
 
-def _extract_date_by_patterns(text: str, patterns: Iterable[str]) -> str | None:
-    for pattern in patterns:
-        match = re.search(pattern, text, flags=re.I)
-        if match:
-            return _parse_iso_date(match.group(1))
+def _extract_date_by_patterns(texts: Iterable[str], patterns: Iterable[str]) -> str | None:
+    for text in texts:
+        for pattern in patterns:
+            match = re.search(pattern, text, flags=re.I)
+            if match:
+                return _parse_iso_date(match.group("date") if "date" in match.groupdict() else match.group(1))
     return None
+
+
+def _call_dates(soup: BeautifulSoup, body_text: str) -> tuple[str | None, str | None, str | None, str | None]:
+    timeline_items = [normalise_space(item.get_text(" ", strip=True)) or "" for item in soup.find_all("li")]
+    texts = [*timeline_items, body_text]
+
+    opening_date = _extract_date_by_patterns(
+        texts,
+        [
+            rf"(?P<date>{DATE_WITH_YEAR_PATTERN})\s+Stage\s*1\s+opens\b",
+            rf"Stage\s*1\s+opens[^.;]{{0,80}}?(?P<date>{DATE_WITH_YEAR_PATTERN})",
+            rf"(?:call|first stage)\s+(?:will\s+)?open(?:s)?\s+on\s+(?P<date>{FULL_DATE_PATTERN})",
+        ],
+    )
+    stage1_deadline = _extract_date_by_patterns(
+        texts,
+        [
+            rf"(?P<date>{FULL_DATE_PATTERN})\s+Stage\s*1\s+closes\b",
+            rf"Stage\s*1\s+closes[^.;]{{0,80}}?(?P<date>{FULL_DATE_PATTERN})",
+            rf"first stage[^.;]{{0,100}}?closes\s+on\s+(?P<date>{FULL_DATE_PATTERN})",
+        ],
+    )
+    stage2_opening = _extract_date_by_patterns(
+        texts,
+        [
+            rf"(?P<date>{DATE_WITH_YEAR_PATTERN})\s+Stage\s*2\s+opens\b",
+            rf"Stage\s*2\s+opens[^.;]{{0,80}}?(?P<date>{DATE_WITH_YEAR_PATTERN})",
+            rf"Stage\s*2\s+opens[^.;]{{0,100}}?in\s+(?P<date>{MONTH_PATTERN}\s+20\d{{2}})",
+        ],
+    )
+    stage2_deadline = _extract_date_by_patterns(
+        texts,
+        [
+            rf"(?P<date>{FULL_DATE_PATTERN})\s+Stage\s*2\s+closes\b",
+            rf"Stage\s*2\s+closes[^.;]{{0,80}}?(?P<date>{FULL_DATE_PATTERN})",
+            rf"Stage\s*2[^.;]{{0,100}}?closes\s+on\s+(?P<date>{FULL_DATE_PATTERN})",
+        ],
+    )
+    return opening_date, stage1_deadline, stage2_opening, stage2_deadline
+
+
+def _derive_call_status(
+    title: str,
+    body_text: str,
+    retrieved_at: str,
+    opening_date: str | None,
+    stage1_deadline: str | None,
+    stage2_opening: str | None,
+    stage2_deadline: str | None,
+    documents: list[dict[str, str]],
+) -> str:
+    try:
+        today = date_parser.parse(retrieved_at).date()
+    except (ValueError, OverflowError):
+        today = datetime.utcnow().date()
+
+    def parsed(value: str | None) -> date | None:
+        return date.fromisoformat(value) if value else None
+
+    opening = parsed(opening_date)
+    first_close = parsed(stage1_deadline)
+    second_open = parsed(stage2_opening)
+    second_close = parsed(stage2_deadline)
+    result_evidence = " ".join(document["title"].lower() for document in documents)
+    result_evidence += " " + body_text[:3500].lower()
+
+    if any(token in result_evidence for token in ("projects suggested for funding", "funded projects")):
+        return "results"
+    if opening and today < opening:
+        return "forthcoming"
+    if second_close and today > second_close:
+        return "closed"
+    if second_open and second_close and second_open <= today <= second_close:
+        return "open"
+    if first_close and today > first_close and (not second_open or today < second_open):
+        return "evaluation"
+    if opening and first_close and opening <= today <= first_close:
+        return "open"
+
+    year_match = re.search(r"\b(20\d{2})\b", title)
+    if year_match:
+        call_year = int(year_match.group(1))
+        if call_year > today.year:
+            return "forthcoming"
+        if call_year < today.year:
+            return "closed"
+    return "open" if re.search(r"\bcall is open\b", body_text[:3000], re.I) else "unknown"
 
 
 def parse_call(html: str, fetched_url: str, retrieved_at: str) -> dict[str, Any]:
@@ -131,54 +266,45 @@ def parse_call(html: str, fetched_url: str, retrieved_at: str) -> dict[str, Any]
     title = _title(soup)
     h1 = soup.find("h1")
     subtitle = _first_meaningful_text_after(h1) if h1 else None
-    body_text = normalise_space(soup.get_text(" ", strip=True)) or ""
-    lower_body = body_text.lower()
-    status = next((word for word in STATUS_WORDS if re.search(rf"\b{word}\b", lower_body[:2500])), None)
-    if title.lower().endswith("2026") and "will open" in lower_body:
-        status = "forthcoming"
+    root = _content_root(soup)
+    body_text = normalise_space(root.get_text(" ", strip=True)) or ""
 
-    opening_date = _extract_date_by_patterns(
-        body_text,
-        [
-            r"(?:will open|opens|Stage 1 opens).*?((?:\d{1,2}\s+)?[A-Za-z]+\s+\d{4})",
-            r"(\d{1,2}\s+[A-Za-z]+\s+\d{4}).{0,40}Stage 1 opens",
-        ],
-    )
-    stage1_deadline = _extract_date_by_patterns(
-        body_text,
-        [
-            r"(\d{1,2}\s+[A-Za-z]+\s+\d{4})\s+Stage 1 closes",
-            r"Stage 1 closes.{0,40}?(\d{1,2}\s+[A-Za-z]+\s+\d{4})",
-            r"closes on (\d{1,2}\s+[A-Za-z]+\s+\d{4})",
-        ],
-    )
-    stage2_opening = _extract_date_by_patterns(
-        body_text,
-        [
-            r"((?:\d{1,2}\s+)?[A-Za-z]+\s+\d{4})\s+Stage 2 opens",
-            r"Stage 2 opens.{0,40}?((?:\d{1,2}\s+)?[A-Za-z]+\s+\d{4})",
-        ],
-    )
-    stage2_deadline = _extract_date_by_patterns(
-        body_text,
-        [
-            r"(\d{1,2}\s+[A-Za-z]+\s+\d{4})\s+Stage 2 closes",
-            r"Stage 2 closes.{0,40}?(\d{1,2}\s+[A-Za-z]+\s+\d{4})",
-            r"closes on (\d{1,2}\s+[A-Za-z]+\s+\d{4}).{0,80}(?:Stage 2|full proposal)",
-        ],
-    )
+    opening_date, stage1_deadline, stage2_opening, stage2_deadline = _call_dates(soup, body_text)
 
     topics: list[str] = []
-    for heading in soup.find_all(["h2", "h3"]):
+    rejected_topic_tokens = {
+        "legal notice",
+        "contact",
+        "privacy policy",
+        "press",
+        "accessibilty",
+        "accessibility",
+        "youtube",
+        "linkedin",
+    }
+    for heading in soup.find_all(["h2", "h3", "h4"]):
         heading_text = normalise_space(heading.get_text(" ", strip=True)) or ""
-        if "call topics" in heading_text.lower():
-            for item in heading.find_all_next("li", limit=8):
-                item_text = normalise_space(item.get_text(" ", strip=True))
-                if item_text and item_text not in topics:
-                    topics.append(item_text)
+        if "call topics" not in heading_text.lower():
+            continue
+        for item_text in _list_items_under_heading(heading):
+            lowered = item_text.lower()
+            if lowered in rejected_topic_tokens or ".pdf" in lowered or len(item_text) > 260:
+                continue
+            if item_text not in topics:
+                topics.append(item_text)
 
     documents = _links(soup, canonical_url, suffix=".pdf")
     participating = _text_under_heading(soup, r"^Participating Countries$")
+    status = _derive_call_status(
+        title,
+        body_text,
+        retrieved_at,
+        opening_date,
+        stage1_deadline,
+        stage2_opening,
+        stage2_deadline,
+        documents,
+    )
 
     source_payload = {
         "title": title,
@@ -227,11 +353,91 @@ def _extract_label_value(soup: BeautifulSoup, label: str) -> str | None:
     return None
 
 
+def _parse_date_range(value: str | None, year_hint: int | None = None) -> tuple[str | None, str | None]:
+    if not value:
+        return None, None
+    text = normalise_space(value) or ""
+    text = text.replace("—", "–")
+
+    range_match = re.fullmatch(
+        rf"(\d{{1,2}})\s+({MONTH_PATTERN})\s*[–-]\s*(\d{{1,2}})\s+({MONTH_PATTERN})(?:\s+(20\d{{2}}))?",
+        text,
+        flags=re.I,
+    )
+    if range_match:
+        first_day, first_month, second_day, second_month, year_text = range_match.groups()
+        year = int(year_text) if year_text else year_hint
+        if not year:
+            return None, None
+        start = _parse_iso_date(f"{first_day} {first_month} {year}")
+        end = _parse_iso_date(f"{second_day} {second_month} {year}")
+        return start, end
+
+    compact_range = re.fullmatch(
+        rf"(\d{{1,2}})\s*[–-]\s*(\d{{1,2}})\s+({MONTH_PATTERN})(?:\s+(20\d{{2}}))?",
+        text,
+        flags=re.I,
+    )
+    if compact_range:
+        first_day, second_day, month, year_text = compact_range.groups()
+        year = int(year_text) if year_text else year_hint
+        if not year:
+            return None, None
+        return (
+            _parse_iso_date(f"{first_day} {month} {year}"),
+            _parse_iso_date(f"{second_day} {month} {year}"),
+        )
+
+    if not re.search(r"\b20\d{2}\b", text):
+        if not year_hint:
+            return None, None
+        text = f"{text} {year_hint}"
+    return _parse_iso_date(text), None
+
+
+def _event_year_hint(title: str, date_text: str | None, main_text: str, retrieved_at: str) -> int | None:
+    direct_year = re.search(r"\b(20\d{2})\b", date_text or "")
+    if direct_year:
+        return int(direct_year.group(1))
+
+    day_month_match = re.search(rf"\b(\d{{1,2}})\s+({MONTH_PATTERN})\b", date_text or "", re.I)
+    if day_month_match:
+        expected_day = int(day_month_match.group(1))
+        expected_month = date_parser.parse(day_month_match.group(2), fuzzy=True).month
+        for candidate in re.findall(FULL_DATE_PATTERN, main_text, flags=re.I):
+            parsed = date_parser.parse(candidate, fuzzy=True, dayfirst=True)
+            if parsed.day == expected_day and parsed.month == expected_month:
+                return parsed.year
+
+    try:
+        max_reasonable_year = date_parser.parse(retrieved_at).year + 2
+    except (ValueError, OverflowError):
+        max_reasonable_year = datetime.utcnow().year + 2
+    title_year = re.search(r"\b(20\d{2})\b", title)
+    if title_year and 2020 <= int(title_year.group(1)) <= max_reasonable_year:
+        return int(title_year.group(1))
+    return None
+
+
+def _event_mode(location: str | None, main_text: str) -> str:
+    context = normalise_space(" ".join(filter(None, [location, main_text[:1800]]))) or ""
+    lower = context.lower()
+    if "hybrid" in lower:
+        return "hybrid"
+    if re.search(r"\bonline\b", lower):
+        return "online"
+    if location or re.search(r"\bon[- ]?site\b", lower):
+        return "on-site"
+    return "unspecified"
+
+
 def parse_event(html: str, fetched_url: str, retrieved_at: str) -> dict[str, Any]:
     soup = _soup(html)
     canonical_url = _canonical_url(soup, fetched_url)
     title = _title(soup)
     event_ld = _find_ld_type(soup, "Event") or {}
+    root = _content_root(soup)
+    main_text = normalise_space(root.get_text(" ", strip=True)) or ""
 
     start_date = _parse_iso_date(str(event_ld.get("startDate") or ""))
     end_date = _parse_iso_date(str(event_ld.get("endDate") or ""))
@@ -240,15 +446,21 @@ def parse_event(html: str, fetched_url: str, retrieved_at: str) -> dict[str, Any
     location = _extract_label_value(soup, "Location")
 
     if not start_date and date_text:
-        year_match = re.search(r"\b(20\d{2})\b", soup.get_text(" ", strip=True))
-        date_for_parse = f"{date_text} {year_match.group(1)}" if year_match else date_text
-        start_date = _parse_iso_date(date_for_parse)
+        year_hint = _event_year_hint(title, date_text, main_text, retrieved_at)
+        parsed_start, parsed_end = _parse_date_range(date_text, year_hint)
+        start_date = parsed_start
+        end_date = end_date or parsed_end
 
     event_location = event_ld.get("location")
     if isinstance(event_location, dict):
-        location = normalise_space(
-            str(event_location.get("name") or event_location.get("address") or location or "")
-        )
+        address = event_location.get("address")
+        if isinstance(address, dict):
+            address = ", ".join(
+                str(address.get(key))
+                for key in ("streetAddress", "addressLocality", "addressCountry")
+                if address.get(key)
+            )
+        location = normalise_space(str(event_location.get("name") or address or location or ""))
 
     links = _links(soup, canonical_url)
     registration = next(
@@ -259,8 +471,7 @@ def parse_event(html: str, fetched_url: str, retrieved_at: str) -> dict[str, Any
         ),
         None,
     )
-    body_text = normalise_space(soup.get_text(" ", strip=True)) or ""
-    mode = "online" if "online" in (location or "").lower() or re.search(r"\bonline\b", body_text[:1200], re.I) else "on-site"
+    mode = _event_mode(location, main_text)
     excerpt = _meta_description(soup)
     if not excerpt:
         h1 = soup.find("h1")

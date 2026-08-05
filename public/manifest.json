@@ -1,13 +1,12 @@
 {
   "schema_version": "1.0",
-  "dataset_version": "2026-08-05T23:01:38Z",
-  "generated_at": "2026-08-05T23:01:38Z",
-  "dataset_hash": "sha256:4278ed225c077cd9c4364eac8524cbd0f4358dda5feee1a9bf1dc577103c1a1c",
+  "dataset_version": "2026-08-05T23:24:04Z",
+  "generated_at": "2026-08-05T23:24:04Z",
+  "dataset_hash": "sha256:af1e600fce40ba3d6584406f30a1074bc57578c94aeea5ac48a99ce93f219886",
   "status": "valid",
   "changed_datasets": [
     "calls",
-    "events",
-    "publications"
+    "events"
   ],
   "record_counts": {
     "calls": 5,
@@ -15,8 +14,8 @@
     "publications": 17
   },
   "dataset_hashes": {
-    "calls": "sha256:18ef8d638bcc75b8e94a0397fba772baf41a4d841430d8a10660096bbf47d3cc",
-    "events": "sha256:ab8c0de1afbe51bb94dd1f7a1e396462fd80b9d9de643086ee7ca71500cb87c4",
+    "calls": "sha256:52a22f0c504d74faef5803606779bc54e7249b0582e739a6f68b9d9a1f08e1a3",
+    "events": "sha256:7d6820356b5f07e45f6b5e4b0f41b824099b3feda5290a38c9849b193f4746f7",
     "publications": "sha256:97fe03541d72355c81be91295013c1b93980e2ed743fb00c63fb58b2bdaebffe"
   },
   "files": {

@@ -11,7 +11,7 @@
     "start_date": {"type": ["string", "null"]},
     "end_date": {"type": ["string", "null"]},
     "location": {"type": ["string", "null"]},
-    "mode": {"enum": ["online", "on-site"]},
+    "mode": {"enum": ["online", "on-site", "hybrid", "unspecified"]},
     "source_status": {"type": "string"},
     "content_hash": {"type": "string", "pattern": "^sha256:"}
   }
