@@ -1,102 +1,149 @@
 List,Display Name,Internal Name,Type,Required,Control,Notes
-DUT_Sync_Control,Title,Title,Single line text,Yes,Local,Use Main
-DUT_Sync_Control,Last Dataset Hash,LastDatasetHash,Single line text,No,Flow,Compared with manifest.dataset_hash
+DUT_Sync_Control,Title,Title,Single line text,Yes,Local,Use one row per dataset: manifest; calls; events; news; publications; webinars; newsletters
+DUT_Sync_Control,Last Dataset Hash,LastDatasetHash,Single line text,No,Flow,Dataset-specific hash from manifest.dataset_hashes
 DUT_Sync_Control,Last Successful Sync,LastSuccessfulSync,Date and time,No,Flow,UTC
 DUT_Sync_Control,Last Dataset Version,LastDatasetVersion,Single line text,No,Flow,manifest.dataset_version
 DUT_Sync_Control,Last Status,LastStatus,Choice,No,Flow,valid; partial; failed
+DUT_Sync_Control,Last Record Count,LastRecordCount,Number,No,Flow,Whole number
 DUT_Sync_Control,Last Error,LastError,Multiple lines text,No,Flow,Error summary
 DUT_Calls,Title,Title,Single line text,Yes,GitHub,Source title
-DUT_Calls,Subtitle,Subtitle,Multiple lines text,No,GitHub,Source subtitle
-DUT_Calls,Source Description,SourceDescription,Multiple lines text,No,GitHub,Meta description if exposed
-DUT_Calls,Participating Countries,ParticipatingCountriesText,Multiple lines text,No,GitHub,Source text
-DUT_Calls,Retrieved At,RetrievedAt,Date and time,No,GitHub,First retrieval for unchanged version
-DUT_Calls,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
-DUT_Calls,Source URL,SourceURL,Hyperlink,Yes,GitHub,Canonical DUT URL
+DUT_Calls,Subtitle,Subtitle,Multiple lines text,No,GitHub,
+DUT_Calls,Source Description,SourceDescription,Multiple lines text,No,GitHub,
+DUT_Calls,Participating Countries,ParticipatingCountriesText,Multiple lines text,No,GitHub,
+DUT_Calls,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Index and enforce unique values
+DUT_Calls,Source URL,SourceURL,Hyperlink,Yes,GitHub,Canonical source URL
+DUT_Calls,Retrieved At,RetrievedAt,Date and time,No,GitHub,UTC
 DUT_Calls,Source Status,SourceStatus,Choice,Yes,GitHub,active; possibly_removed; archived
 DUT_Calls,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
-DUT_Calls,Call Status,CallStatus,Choice,No,GitHub,forthcoming; open; closed; evaluation; results
+DUT_Calls,Call Status,CallStatus,Choice,No,GitHub,forthcoming; open; closed; evaluation; results; unknown
 DUT_Calls,Opening Date,OpeningDate,Date only,No,GitHub,
 DUT_Calls,Stage 1 Deadline,Stage1Deadline,Date only,No,GitHub,High materiality
 DUT_Calls,Stage 2 Opening,Stage2Opening,Date only,No,GitHub,
 DUT_Calls,Stage 2 Deadline,Stage2Deadline,Date only,No,GitHub,High materiality
-DUT_Calls,Topics JSON,TopicsJSON,Multiple lines text,No,GitHub,Plain text
-DUT_Calls,Documents JSON,DocumentsJSON,Multiple lines text,No,GitHub,Plain text
+DUT_Calls,Topics JSON,TopicsJSON,Multiple lines text,No,GitHub,Plain JSON string
+DUT_Calls,Documents JSON,DocumentsJSON,Multiple lines text,No,GitHub,Plain JSON string
 DUT_Calls,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten by import
-DUT_Calls,National Funding Information,NationalFundingInformation,Multiple lines text,No,CCDR,Never overwritten by import
+DUT_Calls,National Funding Information,NationalFundingInformation,Multiple lines text,No,CCDR,Never overwritten
 DUT_Calls,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
 DUT_Calls,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
+DUT_Calls,Editorial Notes,EditorialNotes,Multiple lines text,No,CCDR,Never overwritten
+DUT_Calls,Reviewed By,ReviewedBy,Person,No,CCDR,Never overwritten
+DUT_Calls,Reviewed At,ReviewedAt,Date and time,No,CCDR,Never overwritten
 DUT_Events,Title,Title,Single line text,Yes,GitHub,
-DUT_Events,Retrieved At,RetrievedAt,Date and time,No,GitHub,First retrieval for unchanged version
-DUT_Events,Date Text,DateText,Single line text,No,GitHub,Original display text
-DUT_Events,Description Excerpt,DescriptionExcerpt,Multiple lines text,No,GitHub,Source excerpt
-DUT_Events,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
-DUT_Events,Source URL,SourceURL,Hyperlink,Yes,GitHub,
-DUT_Events,Source Status,SourceStatus,Choice,Yes,GitHub,
+DUT_Events,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Index and enforce unique values
+DUT_Events,Source URL,SourceURL,Hyperlink,Yes,GitHub,Canonical source URL
+DUT_Events,Retrieved At,RetrievedAt,Date and time,No,GitHub,UTC
+DUT_Events,Source Status,SourceStatus,Choice,Yes,GitHub,active; possibly_removed; archived
 DUT_Events,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
 DUT_Events,Start Date,StartDate,Date only,No,GitHub,High materiality
 DUT_Events,End Date,EndDate,Date only,No,GitHub,
+DUT_Events,Date Text,DateText,Single line text,No,GitHub,Original source display
 DUT_Events,Time Text,TimeText,Single line text,No,GitHub,
 DUT_Events,Location,Location,Single line text,No,GitHub,
-DUT_Events,Mode,EventMode,Choice,No,GitHub,online; on-site
+DUT_Events,Mode,EventMode,Choice,No,GitHub,online; on-site; hybrid; unspecified
 DUT_Events,Registration URL,RegistrationURL,Hyperlink,No,GitHub,
-DUT_Events,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
+DUT_Events,Description Excerpt,DescriptionExcerpt,Multiple lines text,No,GitHub,
+DUT_Events,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten by import
 DUT_Events,Regional Relevance,RegionalRelevance,Multiple lines text,No,CCDR,Never overwritten
 DUT_Events,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
 DUT_Events,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
+DUT_Events,Editorial Notes,EditorialNotes,Multiple lines text,No,CCDR,Never overwritten
+DUT_Events,Reviewed By,ReviewedBy,Person,No,CCDR,Never overwritten
+DUT_Events,Reviewed At,ReviewedAt,Date and time,No,CCDR,Never overwritten
+DUT_News,Title,Title,Single line text,Yes,GitHub,
+DUT_News,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Index and enforce unique values
+DUT_News,Source URL,SourceURL,Hyperlink,Yes,GitHub,Canonical source URL
+DUT_News,Retrieved At,RetrievedAt,Date and time,No,GitHub,UTC
+DUT_News,Source Status,SourceStatus,Choice,Yes,GitHub,active; possibly_removed; archived
+DUT_News,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
+DUT_News,News Type,NewsType,Single line text,No,GitHub,
+DUT_News,Published Year,PublishedYear,Number,No,GitHub,Whole number
+DUT_News,Published Month,PublishedMonth,Number,No,GitHub,1-12
+DUT_News,Published Sort Date,PublishedSortDate,Date only,No,GitHub,First day of month for ordering
+DUT_News,Author,Author,Multiple lines text,No,GitHub,
+DUT_News,Topics JSON,TopicsJSON,Multiple lines text,No,GitHub,Plain JSON string
+DUT_News,Transition Pathways JSON,TransitionPathwaysJSON,Multiple lines text,No,GitHub,Plain JSON string
+DUT_News,Source Description,SourceDescription,Multiple lines text,No,GitHub,
+DUT_News,Source Priority,SourcePriority,Number,No,GitHub,Lower number has higher precedence
+DUT_News,Source Role,SourceRole,Choice,No,GitHub,primary_european; secondary_manual; legacy_primary; legacy_regional_backfill
+DUT_News,Source Name,SourceName,Single line text,No,GitHub,DUT Partnership; JPI Urban Europe; CCDR NORTE legacy archive
+DUT_News,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten by import
+DUT_News,Regional Relevance,RegionalRelevance,Multiple lines text,No,CCDR,Never overwritten
+DUT_News,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
+DUT_News,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
+DUT_News,Editorial Notes,EditorialNotes,Multiple lines text,No,CCDR,Never overwritten
+DUT_News,Reviewed By,ReviewedBy,Person,No,CCDR,Never overwritten
+DUT_News,Reviewed At,ReviewedAt,Date and time,No,CCDR,Never overwritten
 DUT_Publications,Title,Title,Single line text,Yes,GitHub,
-DUT_Publications,Retrieved At,RetrievedAt,Date and time,No,GitHub,First retrieval for unchanged version
-DUT_Publications,File Type,FileType,Single line text,No,GitHub,Usually pdf
-DUT_Publications,File Size Text,FileSizeText,Single line text,No,GitHub,As displayed at source
-DUT_Publications,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
-DUT_Publications,Document URL,DocumentURL,Hyperlink,Yes,GitHub,
-DUT_Publications,Library URL,SourceURL,Hyperlink,Yes,GitHub,
-DUT_Publications,Category,PublicationCategory,Single line text,No,GitHub,
-DUT_Publications,Source Status,SourceStatus,Choice,Yes,GitHub,
+DUT_Publications,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Index and enforce unique values
+DUT_Publications,Library URL,SourceURL,Hyperlink,Yes,GitHub,Canonical source URL
+DUT_Publications,Retrieved At,RetrievedAt,Date and time,No,GitHub,UTC
+DUT_Publications,Source Status,SourceStatus,Choice,Yes,GitHub,active; possibly_removed; archived
 DUT_Publications,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
-DUT_Publications,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
+DUT_Publications,Document URL,DocumentURL,Hyperlink,Yes,GitHub,
+DUT_Publications,Category,PublicationCategory,Single line text,No,GitHub,
+DUT_Publications,File Type,FileType,Single line text,No,GitHub,Usually pdf
+DUT_Publications,File Size Text,FileSizeText,Single line text,No,GitHub,
+DUT_Publications,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten by import
 DUT_Publications,Regional Relevance,RegionalRelevance,Multiple lines text,No,CCDR,Never overwritten
 DUT_Publications,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
 DUT_Publications,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
-DUT_Import_Exceptions,Title,Title,Single line text,Yes,Flow,External ID or URL
-DUT_Import_Exceptions,Dataset,Dataset,Choice,Yes,Flow,calls; events; publications; manifest
-DUT_Import_Exceptions,Error Time,ErrorTime,Date and time,Yes,Flow,UTC
-DUT_Import_Exceptions,Error Detail,ErrorDetail,Multiple lines text,Yes,Flow,
-DUT_Import_Exceptions,Payload,Payload,Multiple lines text,No,Flow,Truncated if necessary
-DUT_Webinars,Title,Title,Single line text,Yes,GitHub,Webinar title
-DUT_Webinars,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
-DUT_Webinars,Series,WebinarSeries,Single line text,Yes,GitHub,Urban Lunch Talks
-DUT_Webinars,Episode Number,EpisodeNumber,Number,No,GitHub,Whole number
-DUT_Webinars,Source URL,SourceURL,Hyperlink,Yes,GitHub,Canonical DUT event page
-DUT_Webinars,Source Event ID,SourceEventID,Single line text,Yes,GitHub,Links to DUT_Events record
-DUT_Webinars,Event Date,EventDate,Date only,No,GitHub,
-DUT_Webinars,End Date,EndDate,Date only,No,GitHub,
-DUT_Webinars,Date Text,DateText,Single line text,No,GitHub,Original source display
-DUT_Webinars,Time Text,TimeText,Single line text,No,GitHub,
-DUT_Webinars,Recording URL,RecordingURL,Hyperlink,No,GitHub,Canonical YouTube watch URL
-DUT_Webinars,Recording Status,RecordingStatus,Choice,Yes,GitHub,available; not_found
-DUT_Webinars,Registration URL,RegistrationURL,Hyperlink,No,GitHub,
-DUT_Webinars,Speakers JSON,SpeakersJSON,Multiple lines text,No,GitHub,Plain JSON text
-DUT_Webinars,Moderator,Moderator,Multiple lines text,No,GitHub,
-DUT_Webinars,Description Excerpt,DescriptionExcerpt,Multiple lines text,No,GitHub,
+DUT_Publications,Editorial Notes,EditorialNotes,Multiple lines text,No,CCDR,Never overwritten
+DUT_Publications,Reviewed By,ReviewedBy,Person,No,CCDR,Never overwritten
+DUT_Publications,Reviewed At,ReviewedAt,Date and time,No,CCDR,Never overwritten
+DUT_Webinars,Title,Title,Single line text,Yes,GitHub,
+DUT_Webinars,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Index and enforce unique values
+DUT_Webinars,Source URL,SourceURL,Hyperlink,Yes,GitHub,Canonical source URL
 DUT_Webinars,Retrieved At,RetrievedAt,Date and time,No,GitHub,UTC
 DUT_Webinars,Source Status,SourceStatus,Choice,Yes,GitHub,active; possibly_removed; archived
 DUT_Webinars,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
-DUT_Webinars,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
+DUT_Webinars,Series,WebinarSeries,Single line text,Yes,GitHub,Urban Lunch Talks
+DUT_Webinars,Episode Number,EpisodeNumber,Number,No,GitHub,Whole number
+DUT_Webinars,Source Event ID,SourceEventID,Single line text,No,GitHub,Null for JPI legacy records
+DUT_Webinars,Event Date,EventDate,Date only,No,GitHub,
+DUT_Webinars,End Date,EndDate,Date only,No,GitHub,
+DUT_Webinars,Date Text,DateText,Single line text,No,GitHub,
+DUT_Webinars,Time Text,TimeText,Single line text,No,GitHub,
+DUT_Webinars,Recording URL,RecordingURL,Hyperlink,No,GitHub,YouTube when available
+DUT_Webinars,Recording Status,RecordingStatus,Choice,Yes,GitHub,available; not_found
+DUT_Webinars,Registration URL,RegistrationURL,Hyperlink,No,GitHub,
+DUT_Webinars,Speakers JSON,SpeakersJSON,Multiple lines text,No,GitHub,Plain JSON string
+DUT_Webinars,Moderator,Moderator,Multiple lines text,No,GitHub,
+DUT_Webinars,Description Excerpt,DescriptionExcerpt,Multiple lines text,No,GitHub,
+DUT_Webinars,Source Priority,SourcePriority,Number,No,GitHub,Lower number has higher precedence
+DUT_Webinars,Source Role,SourceRole,Choice,No,GitHub,primary_european; secondary_manual; legacy_primary; legacy_regional_backfill
+DUT_Webinars,Source Name,SourceName,Single line text,No,GitHub,DUT Partnership; JPI Urban Europe; CCDR NORTE legacy archive
+DUT_Webinars,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten by import
 DUT_Webinars,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
 DUT_Webinars,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
-DUT_Newsletters,Title,Title,Single line text,Yes,Flow,Map from issue_label
-DUT_Newsletters,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Enforce unique values and index
-DUT_Newsletters,Issue Label,IssueLabel,Single line text,Yes,GitHub,Source display label
-DUT_Newsletters,Issue Year,IssueYear,Number,No,GitHub,Whole number
-DUT_Newsletters,Issue Month,IssueMonth,Number,No,GitHub,1-12; seasonal anchor when applicable
-DUT_Newsletters,Issue Period,IssuePeriod,Choice,Yes,GitHub,month; season; unknown
-DUT_Newsletters,Issue Sort Date,IssueSortDate,Date only,No,GitHub,Synthetic first day for ordering only
-DUT_Newsletters,Archive URL,ArchiveURL,Hyperlink,Yes,GitHub,Mailchimp public archive URL without recipient tracking parameter
-DUT_Newsletters,Archive Host,ArchiveHost,Single line text,No,GitHub,
-DUT_Newsletters,Source Page URL,SourceURL,Hyperlink,Yes,GitHub,CCDR NORTE archive page
+DUT_Webinars,Editorial Notes,EditorialNotes,Multiple lines text,No,CCDR,Never overwritten
+DUT_Webinars,Reviewed By,ReviewedBy,Person,No,CCDR,Never overwritten
+DUT_Webinars,Reviewed At,ReviewedAt,Date and time,No,CCDR,Never overwritten
+DUT_Newsletters,Title,Title,Single line text,Yes,Flow,Map from IssueLabel
+DUT_Newsletters,External Source ID,ExternalSourceID,Single line text,Yes,GitHub,Index and enforce unique values
+DUT_Newsletters,Source Page URL,SourceURL,Hyperlink,Yes,GitHub,Canonical source URL
 DUT_Newsletters,Retrieved At,RetrievedAt,Date and time,No,GitHub,UTC
 DUT_Newsletters,Source Status,SourceStatus,Choice,Yes,GitHub,active; possibly_removed; archived
 DUT_Newsletters,Content Hash,ContentHash,Single line text,Yes,GitHub,Index
-DUT_Newsletters,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten
+DUT_Newsletters,Issue Label,IssueLabel,Single line text,Yes,GitHub,
+DUT_Newsletters,Issue Year,IssueYear,Number,No,GitHub,Whole number
+DUT_Newsletters,Issue Month,IssueMonth,Number,No,GitHub,1-12
+DUT_Newsletters,Issue Period,IssuePeriod,Choice,Yes,GitHub,month; season; unknown
+DUT_Newsletters,Issue Sort Date,IssueSortDate,Date only,No,GitHub,First day for ordering only
+DUT_Newsletters,Archive URL,ArchiveURL,Hyperlink,Yes,GitHub,
+DUT_Newsletters,Archive Host,ArchiveHost,Single line text,No,GitHub,
+DUT_Newsletters,Source Priority,SourcePriority,Number,No,GitHub,Lower number has higher precedence
+DUT_Newsletters,Source Role,SourceRole,Choice,No,GitHub,primary_european; secondary_manual; legacy_primary; legacy_regional_backfill
+DUT_Newsletters,Source Name,SourceName,Single line text,No,GitHub,DUT Partnership; JPI Urban Europe; CCDR NORTE legacy archive
+DUT_Newsletters,Local Summary PT,LocalSummaryPT,Multiple lines text,No,CCDR,Never overwritten by import
 DUT_Newsletters,Review Status,ReviewStatus,Choice,Yes,CCDR,New; Pending; Approved; Rejected; Clarification
 DUT_Newsletters,Publication Status,PublicationStatus,Choice,Yes,CCDR,Not selected; Ready; Published; Archived
+DUT_Newsletters,Editorial Notes,EditorialNotes,Multiple lines text,No,CCDR,Never overwritten
+DUT_Newsletters,Reviewed By,ReviewedBy,Person,No,CCDR,Never overwritten
+DUT_Newsletters,Reviewed At,ReviewedAt,Date and time,No,CCDR,Never overwritten
+DUT_Import_Exceptions,Title,Title,Single line text,Yes,Flow,External ID or URL
+DUT_Import_Exceptions,Dataset,Dataset,Choice,Yes,Flow,manifest; calls; events; news; publications; webinars; newsletters
+DUT_Import_Exceptions,Error Time,ErrorTime,Date and time,Yes,Flow,UTC
+DUT_Import_Exceptions,Error Detail,ErrorDetail,Multiple lines text,Yes,Flow,
+DUT_Import_Exceptions,Payload,Payload,Multiple lines text,No,Flow,Truncate if necessary
+DUT_Import_Exceptions,Flow Run URL,FlowRunURL,Hyperlink,No,Flow,Optional
