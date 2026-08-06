@@ -48,3 +48,5 @@ jobs:
           fi
           git commit -m "data: apply DUT source hierarchy and legacy backfill"
           git push
+
+# Retry after splitting source-priority modules for transfer integrity.
