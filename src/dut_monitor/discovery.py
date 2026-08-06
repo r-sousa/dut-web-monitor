@@ -68,13 +68,15 @@ def discover_links_from_index(
 
 
 def classify_urls(urls: set[str], settings: Settings) -> dict[str, set[str]]:
-    groups = {"calls": set(), "events": set(), "projects": set()}
+    groups = {"calls": set(), "events": set(), "news": set(), "projects": set()}
     for url in urls:
         path = urlsplit(url).path.rstrip("/")
         if path.startswith("/calls/"):
             groups["calls"].add(url)
         elif path.startswith("/events/"):
             groups["events"].add(url)
+        elif path.startswith("/news/"):
+            groups["news"].add(url)
         elif path.startswith("/projects/"):
             groups["projects"].add(url)
     return groups

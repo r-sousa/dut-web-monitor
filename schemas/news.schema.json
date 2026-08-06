@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DUT news record",
+  "type": "object",
+  "required": ["external_id", "content_type", "title", "canonical_url", "source_role", "content_hash"],
+  "properties": {
+    "external_id": {"type": "string"},
+    "content_type": {"const": "news"},
+    "title": {"type": "string"},
+    "canonical_url": {"type": "string", "format": "uri"},
+    "news_type": {"type": "string"},
+    "published_sort_date": {"type": ["string", "null"]},
+    "source_priority": {"type": "integer"},
+    "source_role": {"type": "string"},
+    "source_status": {"type": "string"},
+    "content_hash": {"type": "string", "pattern": "^sha256:"}
+  }
+}

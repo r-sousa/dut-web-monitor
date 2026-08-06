@@ -1,21 +1,22 @@
 # DUT web monitor
 
-This repository monitors selected public content on the European Driving Urban Transitions website and publishes simple JSON files for ingestion by Microsoft Power Automate and SharePoint.
+This repository monitors public Driving Urban Transitions content and publishes simple JSON files for ingestion by Microsoft Power Automate and SharePoint.
 
-## Scope of the first version
+## Dataset scope
 
 - DUT Calls
 - DUT Events
+- DUT News and stories
 - DUT Library publications
-- Urban Lunch Talk webinars, including recording metadata when exposed
-- DUT newsletter archive links maintained on the CCDR NORTE regional page
+- Urban Lunch Talk webinars, including the JPI Urban Europe legacy series #1–#22
+- DUT newsletter archive records from 2022 onward
 
-Projects and organisations are intentionally deferred until the basic GitHub → Power Automate → SharePoint pipeline has been validated.
+Projects and organisations are intentionally deferred until the GitHub → Power Automate → SharePoint pipeline has been validated.
 
 ## Data flow
 
 ```text
-European DUT website
+European DUT website + frozen official legacy sources
         ↓
 GitHub Actions (daily collection, validation and change detection)
         ↓
@@ -24,21 +25,43 @@ public/*.json on raw.githubusercontent.com
 Power Automate HTTP GET
         ↓
 SharePoint staging and editorial approval
+        ↓
+CCDR NORTE DUT pages
 ```
 
 GitHub has no Microsoft credentials and no access to the CCDR NORTE environment.
 
+## Source hierarchy
+
+The process uses an explicit, non-circular source hierarchy:
+
+1. **European DUT sources** are authoritative for current news, events, webinars and any newsletter archives exposed by the European website.
+2. **Controlled manual JSON files** under `data/manual/` are the secondary layer for exceptional regional additions not yet exposed by the European source.
+3. **Frozen legacy datasets** under `data/legacy/` preserve:
+   - Urban Lunch Talks #1–#22 from the official JPI Urban Europe predecessor series;
+   - the newsletter archive already assembled for the regional DUT page, covering 2022 to February 2026.
+
+The scheduled process does not scrape the regional DUT output pages. Those pages may therefore be generated from the approved database without creating a circular dependency.
+
 ## Repository output
 
-- `public/manifest.json`: version, dataset hash, changed datasets and counts.
-- `public/calls.json`: flat call records.
-- `public/events.json`: flat event records.
-- `public/publications.json`: flat publication records.
-- `public/webinars.json`: Urban Lunch Talk webinar records.
-- `public/newsletters.json`: public Mailchimp newsletter archive records.
+- `public/manifest.json`: version, source hierarchy, dataset hashes and counts.
+- `public/calls.json`: call records.
+- `public/events.json`: event records.
+- `public/news.json`: European DUT news and stories, plus controlled manual additions.
+- `public/publications.json`: library publication records.
+- `public/webinars.json`: complete Urban Lunch Talk series available to the monitor.
+- `public/newsletters.json`: newsletter archive records with explicit provenance.
 - `public/changes-latest.json`: field-level changes for editorial routing.
 
 Power Automate test payloads are under `examples/power-automate/`; they are deliberately kept outside `public/` so they cannot be mistaken for live records.
+
+## Manual secondary layer
+
+- `data/manual/news.json`
+- `data/manual/newsletters.json`
+
+These files are reviewed inputs, not generated regional webpages. European records win whenever the same canonical URL is present in both layers.
 
 ## Local setup
 
@@ -52,13 +75,7 @@ python -m dut_monitor.runner --output public
 
 ## GitHub setup
 
-1. Create a public repository.
-2. Upload the contents of this package to its root.
-3. Enable GitHub Actions.
-4. Run **Update DUT public data** manually.
-5. Verify the JSON files under `public/`.
-
-The workflow then runs daily at 06:17 UTC and commits only material source-data changes.
+Run **Update DUT public data** manually for validation. The workflow subsequently runs daily at 06:17 UTC and commits only material source-data changes.
 
 ## Power Automate and SharePoint
 
@@ -71,14 +88,11 @@ See:
 
 ## Design principles
 
-- Prefer sitemaps and structured metadata; use HTML selectors only as fallback.
+- Prefer European sitemaps and structured metadata; use HTML selectors only as fallback.
 - Collect public metadata and links rather than copying complete source pages.
-- Preserve source attribution and canonical URLs.
+- Preserve canonical URLs, provenance, source priority and source role.
 - Use stable external IDs and content hashes.
 - Do not automatically delete missing records.
 - Never overwrite CCDR-controlled editorial fields.
+- Leave uncertain dates empty instead of inferring them from unrelated page content.
 - Keep request frequency conservative and use an identifying user agent.
-
-## Current limitations
-
-The parsers are covered by representative offline fixtures, but their first live GitHub run is intentionally treated as a validation run. The European site may expose additional structured fields or markup variants that require parser adjustment after the first collected output is inspected.
