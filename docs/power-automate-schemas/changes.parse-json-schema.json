@@ -1,0 +1,20 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "dataset",
+      "external_id",
+      "change_type",
+      "materiality",
+      "changed_fields"
+    ],
+    "properties": {
+      "dataset": {"type": "string"},
+      "external_id": {"type": "string"},
+      "change_type": {"type": "string"},
+      "materiality": {"type": "string"},
+      "changed_fields": {"type": "object"}
+    }
+  }
+}
