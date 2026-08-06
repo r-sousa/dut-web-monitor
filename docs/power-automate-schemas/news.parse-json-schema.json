@@ -1,0 +1,34 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "external_id",
+      "content_type",
+      "title",
+      "canonical_url",
+      "source_status",
+      "content_hash"
+    ],
+    "properties": {
+      "external_id": {"type": "string"},
+      "content_type": {"type": "string"},
+      "title": {"type": "string"},
+      "canonical_url": {"type": "string"},
+      "news_type": {"type": ["string", "null"]},
+      "published_year": {"type": ["integer", "null"]},
+      "published_month": {"type": ["integer", "null"]},
+      "published_sort_date": {"type": ["string", "null"]},
+      "author": {"type": ["string", "null"]},
+      "topics_json": {"type": ["string", "null"]},
+      "transition_pathways_json": {"type": ["string", "null"]},
+      "source_description": {"type": ["string", "null"]},
+      "source_priority": {"type": ["integer", "null"]},
+      "source_role": {"type": ["string", "null"]},
+      "source_name": {"type": ["string", "null"]},
+      "source_status": {"type": "string"},
+      "retrieved_at": {"type": ["string", "null"]},
+      "content_hash": {"type": "string"}
+    }
+  }
+}
