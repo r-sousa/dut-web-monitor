@@ -51,23 +51,6 @@
     "content_hash": "sha256:ccb48aa8f3ea50cc408544c8002c94cb362b9ef213c44433b670ea3fa4fedfc4"
   },
   {
-    "external_id": "dut-event-agora-strategic-dialogue-2024-ed0604e0c7",
-    "content_type": "event",
-    "title": "AGORA Strategic Dialogue - Pioneering Urban Conversations in 2024: Uncover the trendsetting themes for urban transitions",
-    "canonical_url": "https://dutpartnership.eu/events/agora-strategic-dialogue-2024",
-    "start_date": "2024-01-30",
-    "end_date": null,
-    "date_text": "30 Jan",
-    "time_text": "09.00 – 11.00 (CET)",
-    "location": null,
-    "mode": "unspecified",
-    "registration_url": null,
-    "description_excerpt": "Date 30 Jan Time 09.00 – 11.00 (CET) Location",
-    "source_status": "active",
-    "retrieved_at": "2026-08-05T23:24:04Z",
-    "content_hash": "sha256:7bd1c415f560e2926ee7b8890d3642d9c126a9181f402a050ff70ee26121e28f"
-  },
-  {
     "external_id": "dut-event-agora-strategic-dialogue-a804ec0e68",
     "content_type": "event",
     "title": "AGORA Strategic Dialogue",
@@ -83,6 +66,23 @@
     "source_status": "active",
     "retrieved_at": "2026-08-05T23:24:04Z",
     "content_hash": "sha256:28520d5eb86fe5168d0c92c5b0f7eea50d61ec4b120b1d76df56e4c1ec98e9e8"
+  },
+  {
+    "external_id": "dut-event-agora-strategic-dialogue-2024-ed0604e0c7",
+    "content_type": "event",
+    "title": "AGORA Strategic Dialogue - Pioneering Urban Conversations in 2024: Uncover the trendsetting themes for urban transitions",
+    "canonical_url": "https://dutpartnership.eu/events/agora-strategic-dialogue-2024",
+    "start_date": "2024-01-30",
+    "end_date": null,
+    "date_text": "30 Jan",
+    "time_text": "09.00 – 11.00 (CET)",
+    "location": null,
+    "mode": "unspecified",
+    "registration_url": null,
+    "description_excerpt": "Date 30 Jan Time 09.00 – 11.00 (CET) Location",
+    "source_status": "active",
+    "retrieved_at": "2026-08-05T23:24:04Z",
+    "content_hash": "sha256:7bd1c415f560e2926ee7b8890d3642d9c126a9181f402a050ff70ee26121e28f"
   },
   {
     "external_id": "dut-event-agora-strategic-dialogue-dut-conference-2024-31a66c1049",
