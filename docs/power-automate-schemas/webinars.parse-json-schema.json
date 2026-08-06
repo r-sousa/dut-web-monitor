@@ -5,84 +5,35 @@
     "required": [
       "external_id",
       "content_type",
-      "series",
       "title",
       "canonical_url",
       "source_status",
       "content_hash"
     ],
     "properties": {
-      "external_id": {
-        "type": "string"
-      },
-      "content_type": {
-        "const": "webinar"
-      },
-      "series": {
-        "type": "string"
-      },
-      "episode_number": {
-        "type": [
-          "integer",
-          "null"
-        ]
-      },
-      "title": {
-        "type": "string"
-      },
-      "canonical_url": {
-        "type": "string",
-        "format": "uri"
-      },
-      "source_event_id": {
-        "type": "string"
-      },
-      "event_date": {
-        "type": [
-          "string",
-          "null"
-        ]
-      },
-      "end_date": {
-        "type": [
-          "string",
-          "null"
-        ]
-      },
-      "recording_url": {
-        "type": [
-          "string",
-          "null"
-        ]
-      },
-      "recording_status": {
-        "enum": [
-          "available",
-          "not_found"
-        ]
-      },
-      "registration_url": {
-        "type": [
-          "string",
-          "null"
-        ]
-      },
-      "speakers_json": {
-        "type": "string"
-      },
-      "moderator": {
-        "type": [
-          "string",
-          "null"
-        ]
-      },
-      "source_status": {
-        "type": "string"
-      },
-      "content_hash": {
-        "type": "string",
-        "pattern": "^sha256:"
-      }
+      "external_id": {"type": "string"},
+      "content_type": {"type": "string"},
+      "series": {"type": ["string", "null"]},
+      "episode_number": {"type": ["integer", "null"]},
+      "title": {"type": "string"},
+      "canonical_url": {"type": "string"},
+      "source_event_id": {"type": ["string", "null"]},
+      "event_date": {"type": ["string", "null"]},
+      "end_date": {"type": ["string", "null"]},
+      "date_text": {"type": ["string", "null"]},
+      "time_text": {"type": ["string", "null"]},
+      "recording_url": {"type": ["string", "null"]},
+      "recording_status": {"type": ["string", "null"]},
+      "registration_url": {"type": ["string", "null"]},
+      "speakers_json": {"type": ["string", "null"]},
+      "moderator": {"type": ["string", "null"]},
+      "description_excerpt": {"type": ["string", "null"]},
+      "source_priority": {"type": ["integer", "null"]},
+      "source_role": {"type": ["string", "null"]},
+      "source_name": {"type": ["string", "null"]},
+      "source_status": {"type": "string"},
+      "retrieved_at": {"type": ["string", "null"]},
+      "content_hash": {"type": "string"}
     }
   }
 }
