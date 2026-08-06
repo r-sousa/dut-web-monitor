@@ -1,56 +1,44 @@
 {
   "type": "object",
-  "properties": {
-    "schema_version": {
-      "type": "string"
-    },
-    "dataset_version": {
-      "type": "string"
-    },
-    "generated_at": {
-      "type": "string"
-    },
-    "dataset_hash": {
-      "type": "string"
-    },
-    "status": {
-      "type": "string"
-    },
-    "changed_datasets": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "record_counts": {
-      "type": "object"
-    },
-    "dataset_hashes": {
-      "type": "object"
-    },
-    "files": {
-      "type": "object"
-    },
-    "source": {
-      "type": "string"
-    },
-    "errors": {
-      "type": "array"
-    },
-    "sources": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    }
-  },
   "required": [
     "schema_version",
     "dataset_version",
+    "generated_at",
     "dataset_hash",
     "status",
     "changed_datasets",
     "record_counts",
-    "files"
-  ]
+    "dataset_hashes",
+    "files",
+    "errors"
+  ],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "dataset_version": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "dataset_hash": {"type": "string"},
+    "status": {"type": "string"},
+    "changed_datasets": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "record_counts": {
+      "type": "object",
+      "additionalProperties": {"type": "integer"}
+    },
+    "dataset_hashes": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "source": {"type": ["string", "null"]},
+    "source_hierarchy": {"type": ["object", "null"]},
+    "errors": {
+      "type": "array",
+      "items": {"type": "object"}
+    }
+  }
 }
