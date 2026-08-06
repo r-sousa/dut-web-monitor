@@ -7,65 +7,26 @@
       "content_type",
       "issue_label",
       "archive_url",
-      "source_page_url",
       "source_status",
       "content_hash"
     ],
     "properties": {
-      "external_id": {
-        "type": "string"
-      },
-      "content_type": {
-        "const": "newsletter"
-      },
-      "issue_label": {
-        "type": "string"
-      },
-      "issue_year": {
-        "type": [
-          "integer",
-          "null"
-        ]
-      },
-      "issue_month": {
-        "type": [
-          "integer",
-          "null"
-        ],
-        "minimum": 1,
-        "maximum": 12
-      },
-      "issue_period": {
-        "enum": [
-          "month",
-          "season",
-          "unknown"
-        ]
-      },
-      "issue_sort_date": {
-        "type": [
-          "string",
-          "null"
-        ]
-      },
-      "archive_url": {
-        "type": "string",
-        "format": "uri"
-      },
-      "archive_host": {
-        "type": "string"
-      },
-      "source_page_url": {
-        "type": "string",
-        "format": "uri"
-      },
-      "source_status": {
-        "type": "string"
-      },
-      "content_hash": {
-        "type": "string",
-        "pattern": "^sha256:"
-      }
+      "external_id": {"type": "string"},
+      "content_type": {"type": "string"},
+      "issue_label": {"type": "string"},
+      "issue_year": {"type": ["integer", "null"]},
+      "issue_month": {"type": ["integer", "null"]},
+      "issue_period": {"type": ["string", "null"]},
+      "issue_sort_date": {"type": ["string", "null"]},
+      "archive_url": {"type": "string"},
+      "archive_host": {"type": ["string", "null"]},
+      "source_page_url": {"type": ["string", "null"]},
+      "source_priority": {"type": ["integer", "null"]},
+      "source_role": {"type": ["string", "null"]},
+      "source_name": {"type": ["string", "null"]},
+      "source_status": {"type": "string"},
+      "retrieved_at": {"type": ["string", "null"]},
+      "content_hash": {"type": "string"}
     }
   }
 }
