@@ -1148,5 +1148,30 @@
     "source_priority": 1,
     "source_role": "primary_european",
     "source_name": "DUT Partnership"
+  },
+  {
+    "external_id": "dut-webinar-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
+    "content_type": "webinar",
+    "series": "Urban Lunch Talks",
+    "episode_number": 48,
+    "title": "Urban Lunch Talk #48 - A Project Perspective: Is Public Procurement the Key to Scale Circularity in Cities?",
+    "canonical_url": "https://dutpartnership.eu/events/urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities",
+    "source_event_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
+    "event_date": null,
+    "end_date": null,
+    "date_text": "14 Sep",
+    "time_text": "12.00 – 13.00 (CEST)",
+    "recording_url": null,
+    "recording_status": "not_found",
+    "registration_url": "https://us02web.zoom.us/webinar/register/WN_YfepAPl2SQWkEHTF-E3uyw",
+    "speakers_json": "[\"Mari Angeles Blanco Suarez, professor of Chemical Engineering at the Complutense University of Madrid (UCM), CircoCreation project\", \"Thomas Randrup , professor in Urban Open Space Management at SLU, NATURO project\", \"Dagmar Diesner , Researcher at Maastricht Sustainability Institute, SURFIT project\", \"Maria Joâo Matos, National URBACT Point Portugal at Directorate-General for Territory\", \"Ana Calvo, Communications Officer at IQS and DUT\", \"The Driving Urban Transitions (DUT) Partnership is a European Partnership under the R&I framework programme Horizon Europe.\"]",
+    "moderator": null,
+    "description_excerpt": "Date 14 Sep Time 12.00 – 13.00 (CEST) Location Online",
+    "source_status": "active",
+    "retrieved_at": "2026-08-19T07:08:35Z",
+    "content_hash": "sha256:78b9dc16748aa3a3b5794a2b1ebf0a37b7c56e17aee7c402889949b54420b0fd",
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership"
   }
 ]
