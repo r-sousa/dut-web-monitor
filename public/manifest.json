@@ -1,11 +1,10 @@
 {
   "schema_version": "1.1",
-  "dataset_version": "2026-08-19T07:08:35Z",
-  "generated_at": "2026-08-19T07:08:35Z",
-  "dataset_hash": "sha256:6c4e58b9cfcd624872213da64750fb82162c277955647851ade4533d93c12ac8",
+  "dataset_version": "2026-08-20T07:09:33Z",
+  "generated_at": "2026-08-20T07:09:33Z",
+  "dataset_hash": "sha256:2008201d33eb52c4900e2594c420fdac4f4010fd3c9875a7c37f34a4529ceaf4",
   "status": "valid",
   "changed_datasets": [
-    "events",
     "webinars",
     "newsletters"
   ],
@@ -22,7 +21,7 @@
     "events": "sha256:ead20e30c947916223ebb29d2d6c500bf4037e9bef1db23d8c314867f4bd8882",
     "news": "sha256:784ccc62cd8a72653d731d7a1cda9194b3067960fc14e0adacc338fedafca909",
     "publications": "sha256:51f2bf51dd9dca3dce88924d290dec8ec3ead4f3fc515ead4c474bd16b7b47f9",
-    "webinars": "sha256:8418cde107e192e8b1b9bdf2578e9331a9a5c0d74f433c723760e7afb0f61a25",
+    "webinars": "sha256:54170a271d6dbb0a7dc8d51cbb05f85b9594631529c344778ac9f5470f08b157",
     "newsletters": "sha256:d4e2b62bfc535487cc0de0a5e343c920faca4b308f63be1ab513d1741e0a3435"
   },
   "files": {
