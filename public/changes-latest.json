@@ -1,5 +1,32 @@
 [
   {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2026-dcf1208cd1",
+    "change_type": "modified",
+    "materiality": "high",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:0ba86b86886ad4aa1a4f8779dde8b977338ae9100d71964d6b8b2060910486b6",
+        "new": "sha256:b1f136c80163f237c70f4b5b40d5a2d6eade3d54b20935ce366bd55803910702"
+      },
+      "documents_json": {
+        "old": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.16 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-08/DUT%20Call%202026_Call%20Text.pdf\"}]",
+        "new": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.38 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202026_Call%20Text.pdf\"}]"
+      },
+      "status": {
+        "old": "forthcoming",
+        "new": "open"
+      }
+    }
+  },
+  {
+    "dataset": "news",
+    "external_id": "dut-news-dut-call-2026-now-open-4a852b864f",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
     "dataset": "newsletters",
     "external_id": "dut-newsletter-dut-newsletter-april2024-365da16a82",
     "change_type": "possibly_removed",

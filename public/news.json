@@ -1,5 +1,25 @@
 [
   {
+    "external_id": "dut-news-dut-call-2026-now-open-4a852b864f",
+    "content_type": "news",
+    "title": "The DUT Call 2026 Is Now Open!",
+    "canonical_url": "https://dutpartnership.eu/news/dut-call-2026-now-open",
+    "news_type": "News",
+    "published_year": 2026,
+    "published_month": 9,
+    "published_sort_date": "2026-09-01",
+    "author": null,
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-09-01T11:44:53Z",
+    "content_hash": "sha256:b1650e0a667e1452fbd78efa9f25181318d152456471fd1472bce0aba22aced2"
+  },
+  {
     "external_id": "dut-news-39-projects-suggested-funding-dut-call-2025-a9823c07f6",
     "content_type": "news",
     "title": "39 Projects Suggested for Funding in DUT Call 2025",

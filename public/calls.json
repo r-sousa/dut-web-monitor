@@ -81,17 +81,17 @@
     "title": "DUT Call 2026",
     "subtitle": "A funding opportunity for transformative urban research and innovation",
     "canonical_url": "https://dutpartnership.eu/calls/dut-call-2026",
-    "status": "forthcoming",
+    "status": "open",
     "opening_date": "2026-09-01",
     "stage1_deadline": "2026-11-17",
     "stage2_opening": "2027-02-01",
     "stage2_deadline": "2027-04-15",
     "participating_countries_text": "The list of involved countries and funding agencies for the DUT Call 2026 will not be final until 1 September, when the call launches officially. Please refer to the National Annex (Annex A in the call text) for a list of already confirmed funding agencies.",
     "topics_json": "[]",
-    "documents_json": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.16 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-08/DUT%20Call%202026_Call%20Text.pdf\"}]",
+    "documents_json": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.38 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202026_Call%20Text.pdf\"}]",
     "source_description": null,
     "source_status": "active",
-    "retrieved_at": "2026-08-05T23:24:04Z",
-    "content_hash": "sha256:0ba86b86886ad4aa1a4f8779dde8b977338ae9100d71964d6b8b2060910486b6"
+    "retrieved_at": "2026-09-01T11:44:53Z",
+    "content_hash": "sha256:b1f136c80163f237c70f4b5b40d5a2d6eade3d54b20935ce366bd55803910702"
   }
 ]
