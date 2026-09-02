@@ -1,30 +1,59 @@
 [
   {
-    "dataset": "calls",
-    "external_id": "dut-call-dut-call-2026-dcf1208cd1",
-    "change_type": "modified",
+    "dataset": "events",
+    "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
+    "change_type": "possibly_removed",
     "materiality": "high",
     "changed_fields": {
-      "content_hash": {
-        "old": "sha256:0ba86b86886ad4aa1a4f8779dde8b977338ae9100d71964d6b8b2060910486b6",
-        "new": "sha256:b1f136c80163f237c70f4b5b40d5a2d6eade3d54b20935ce366bd55803910702"
-      },
-      "documents_json": {
-        "old": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.16 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-08/DUT%20Call%202026_Call%20Text.pdf\"}]",
-        "new": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.38 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202026_Call%20Text.pdf\"}]"
-      },
-      "status": {
-        "old": "forthcoming",
-        "new": "open"
+      "source_status": {
+        "old": "active",
+        "new": "possibly_removed"
       }
     }
   },
   {
-    "dataset": "news",
-    "external_id": "dut-news-dut-call-2026-now-open-4a852b864f",
-    "change_type": "new",
+    "dataset": "webinars",
+    "external_id": "dut-webinar-urban-lunch-talk-46-boosting-active-mobility-15-minute-city-11e673579a",
+    "change_type": "modified",
     "materiality": "standard",
-    "changed_fields": {}
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:d7df39e5b89344923a2552079d63048984b7f2b7b6b852e2653c41fa4449c5b9",
+        "new": "sha256:4cc66810547d46288e2b5f93c67c9d3c6910663f37c63f392ce16c012e0ac4fa"
+      },
+      "speakers_json": {
+        "old": "[\"Stefanie Rößler , Senior Researcher, Leibniz Institute of Ecological Urban and Regional Development, DUT 15minESTATES project\", \"Tim Jones , Professor of Sustainable Urban Mobility, Oxford Brookes University, DUT ENACT15mC project\", \"Phoebe Schütz , Project Manager Bats and Darker Sky, Free and Hanseatic City of Hamburg\", \"Juan Caballero , Campaign Manager at Eurocities\", \"Moderator : Jakob Schabus, Communications Officer, IQS and DUT\", \"The Driving Urban Transitions (DUT) Partnership is a European Partnership under the R&I framework programme Horizon Europe.\"]",
+        "new": "[\"Stefanie Rößler , Senior Researcher, Leibniz Institute of Ecological Urban and Regional Development, DUT 15minESTATES project\", \"Tim Jones , Professor of Sustainable Urban Mobility, Oxford Brookes University, DUT ENACT15mC project\", \"Phoebe Schütz , Project Manager Bats and Darker Sky, Free and Hanseatic City of Hamburg\", \"Juan Caballero , Campaign Manager at Eurocities\", \"Moderator : Jakob Schabus, Communications Officer, IQS and DUT\"]"
+      }
+    }
+  },
+  {
+    "dataset": "webinars",
+    "external_id": "dut-webinar-urban-lunch-talk-47-urban-nature-restoration-practice-5aa1fab636",
+    "change_type": "modified",
+    "materiality": "standard",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:f83d7023356190e8a110d3379652bacf2c52078ac86c6fad1767310f8c116884",
+        "new": "sha256:4f1009b7d6b1dc527e51e767a53e4b5d7daff36cac60f1b7314cfd72594d8f64"
+      },
+      "speakers_json": {
+        "old": "[\"Joanna Badach , Assistant Professor, Gdansk University of Technology, DUT Urban ElemenTREE project\", \"Kamila Chomicz , Biologist, Independent Filmmaker and Community Activist for Urban Biodiversity, DUT Urban Doers\", \"Leon Kapetas , Lead – Programs, Climate Resilience, Resilient Cities Network\", \"Moderator : Jakob Schabus, Communications Officer DUT and IQ Samhällsbyggnad\", \"The Driving Urban Transitions (DUT) Partnership is a European Partnership under the R&I framework programme Horizon Europe.\"]",
+        "new": "[\"Joanna Badach , Assistant Professor, Gdansk University of Technology, DUT Urban ElemenTREE project\", \"Kamila Chomicz , Biologist, Independent Filmmaker and Community Activist for Urban Biodiversity, DUT Urban Doers\", \"Leon Kapetas , Lead – Programs, Climate Resilience, Resilient Cities Network\", \"Moderator : Jakob Schabus, Communications Officer DUT and IQ Samhällsbyggnad\"]"
+      }
+    }
+  },
+  {
+    "dataset": "webinars",
+    "external_id": "dut-webinar-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
+    "change_type": "possibly_removed",
+    "materiality": "high",
+    "changed_fields": {
+      "source_status": {
+        "old": "active",
+        "new": "possibly_removed"
+      }
+    }
   },
   {
     "dataset": "newsletters",
