@@ -868,7 +868,7 @@
     "published_year": 2024,
     "published_month": 11,
     "published_sort_date": "2024-11-01",
-    "author": null,
+    "author": "Ana Calvo",
     "topics_json": "[]",
     "transition_pathways_json": "[]",
     "source_description": null,
@@ -876,8 +876,8 @@
     "source_role": "primary_european",
     "source_name": "DUT Partnership",
     "source_status": "active",
-    "retrieved_at": "2026-08-06T00:28:31Z",
-    "content_hash": "sha256:3ac886dd5ae60dfa7d64b4d44dbe59139a0c70e3666b3870db02f7a140e75062"
+    "retrieved_at": "2026-09-03T11:22:00Z",
+    "content_hash": "sha256:53debdf5d54a8382ee3d699b664ffd09e1c9461f92d6d02f4e58a050fe7988fc"
   },
   {
     "external_id": "dut-news-dut-city-panel-identifies-priorities-three-transition-pathways-74f9e8b172",

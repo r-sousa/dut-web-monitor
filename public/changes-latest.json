@@ -6,40 +6,24 @@
     "materiality": "high",
     "changed_fields": {
       "source_status": {
-        "old": "active",
+        "old": "possibly_removed",
         "new": "possibly_removed"
       }
     }
   },
   {
-    "dataset": "webinars",
-    "external_id": "dut-webinar-urban-lunch-talk-46-boosting-active-mobility-15-minute-city-11e673579a",
+    "dataset": "news",
+    "external_id": "dut-news-becoming-dut-project-partner-whats-it-businesses-3e3cc871fe",
     "change_type": "modified",
     "materiality": "standard",
     "changed_fields": {
-      "content_hash": {
-        "old": "sha256:d7df39e5b89344923a2552079d63048984b7f2b7b6b852e2653c41fa4449c5b9",
-        "new": "sha256:4cc66810547d46288e2b5f93c67c9d3c6910663f37c63f392ce16c012e0ac4fa"
+      "author": {
+        "old": null,
+        "new": "Ana Calvo"
       },
-      "speakers_json": {
-        "old": "[\"Stefanie Rößler , Senior Researcher, Leibniz Institute of Ecological Urban and Regional Development, DUT 15minESTATES project\", \"Tim Jones , Professor of Sustainable Urban Mobility, Oxford Brookes University, DUT ENACT15mC project\", \"Phoebe Schütz , Project Manager Bats and Darker Sky, Free and Hanseatic City of Hamburg\", \"Juan Caballero , Campaign Manager at Eurocities\", \"Moderator : Jakob Schabus, Communications Officer, IQS and DUT\", \"The Driving Urban Transitions (DUT) Partnership is a European Partnership under the R&I framework programme Horizon Europe.\"]",
-        "new": "[\"Stefanie Rößler , Senior Researcher, Leibniz Institute of Ecological Urban and Regional Development, DUT 15minESTATES project\", \"Tim Jones , Professor of Sustainable Urban Mobility, Oxford Brookes University, DUT ENACT15mC project\", \"Phoebe Schütz , Project Manager Bats and Darker Sky, Free and Hanseatic City of Hamburg\", \"Juan Caballero , Campaign Manager at Eurocities\", \"Moderator : Jakob Schabus, Communications Officer, IQS and DUT\"]"
-      }
-    }
-  },
-  {
-    "dataset": "webinars",
-    "external_id": "dut-webinar-urban-lunch-talk-47-urban-nature-restoration-practice-5aa1fab636",
-    "change_type": "modified",
-    "materiality": "standard",
-    "changed_fields": {
       "content_hash": {
-        "old": "sha256:f83d7023356190e8a110d3379652bacf2c52078ac86c6fad1767310f8c116884",
-        "new": "sha256:4f1009b7d6b1dc527e51e767a53e4b5d7daff36cac60f1b7314cfd72594d8f64"
-      },
-      "speakers_json": {
-        "old": "[\"Joanna Badach , Assistant Professor, Gdansk University of Technology, DUT Urban ElemenTREE project\", \"Kamila Chomicz , Biologist, Independent Filmmaker and Community Activist for Urban Biodiversity, DUT Urban Doers\", \"Leon Kapetas , Lead – Programs, Climate Resilience, Resilient Cities Network\", \"Moderator : Jakob Schabus, Communications Officer DUT and IQ Samhällsbyggnad\", \"The Driving Urban Transitions (DUT) Partnership is a European Partnership under the R&I framework programme Horizon Europe.\"]",
-        "new": "[\"Joanna Badach , Assistant Professor, Gdansk University of Technology, DUT Urban ElemenTREE project\", \"Kamila Chomicz , Biologist, Independent Filmmaker and Community Activist for Urban Biodiversity, DUT Urban Doers\", \"Leon Kapetas , Lead – Programs, Climate Resilience, Resilient Cities Network\", \"Moderator : Jakob Schabus, Communications Officer DUT and IQ Samhällsbyggnad\"]"
+        "old": "sha256:3ac886dd5ae60dfa7d64b4d44dbe59139a0c70e3666b3870db02f7a140e75062",
+        "new": "sha256:53debdf5d54a8382ee3d699b664ffd09e1c9461f92d6d02f4e58a050fe7988fc"
       }
     }
   },
@@ -50,7 +34,7 @@
     "materiality": "high",
     "changed_fields": {
       "source_status": {
-        "old": "active",
+        "old": "possibly_removed",
         "new": "possibly_removed"
       }
     }
