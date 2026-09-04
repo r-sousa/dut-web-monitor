@@ -13,19 +13,10 @@
   },
   {
     "dataset": "news",
-    "external_id": "dut-news-becoming-dut-project-partner-whats-it-businesses-3e3cc871fe",
-    "change_type": "modified",
+    "external_id": "dut-news-inside-grassroots-movements-053b68359b",
+    "change_type": "new",
     "materiality": "standard",
-    "changed_fields": {
-      "author": {
-        "old": null,
-        "new": "Ana Calvo"
-      },
-      "content_hash": {
-        "old": "sha256:3ac886dd5ae60dfa7d64b4d44dbe59139a0c70e3666b3870db02f7a140e75062",
-        "new": "sha256:53debdf5d54a8382ee3d699b664ffd09e1c9461f92d6d02f4e58a050fe7988fc"
-      }
-    }
+    "changed_fields": {}
   },
   {
     "dataset": "webinars",

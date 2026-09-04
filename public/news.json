@@ -20,6 +20,26 @@
     "content_hash": "sha256:b1650e0a667e1452fbd78efa9f25181318d152456471fd1472bce0aba22aced2"
   },
   {
+    "external_id": "dut-news-inside-grassroots-movements-053b68359b",
+    "content_type": "news",
+    "title": "Inside Grassroots Movements",
+    "canonical_url": "https://dutpartnership.eu/news/inside-grassroots-movements",
+    "news_type": "Story",
+    "published_year": 2026,
+    "published_month": 9,
+    "published_sort_date": "2026-09-01",
+    "author": "Jakob Schabus",
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-09-04T11:25:24Z",
+    "content_hash": "sha256:773d13e7ebc2f867edcf8943ef0154cb4a3f9db08d396584044e5fef6e5e5bff"
+  },
+  {
     "external_id": "dut-news-39-projects-suggested-funding-dut-call-2025-a9823c07f6",
     "content_type": "news",
     "title": "39 Projects Suggested for Funding in DUT Call 2025",
