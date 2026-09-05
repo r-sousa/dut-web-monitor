@@ -20,6 +20,26 @@
     "content_hash": "sha256:b1650e0a667e1452fbd78efa9f25181318d152456471fd1472bce0aba22aced2"
   },
   {
+    "external_id": "dut-news-new-partners-philippines-have-joined-dut-call-2026-f99f31ad7c",
+    "content_type": "news",
+    "title": "New partners: The Philippines have joined DUT Call 2026",
+    "canonical_url": "https://dutpartnership.eu/news/new-partners-philippines-have-joined-dut-call-2026",
+    "news_type": "News",
+    "published_year": 2026,
+    "published_month": 9,
+    "published_sort_date": "2026-09-01",
+    "author": "Jakob Schabus",
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-09-05T10:41:53Z",
+    "content_hash": "sha256:9f4116ae6bcf31eff67f8ade403efbab7dee76ba1c4c19b4c45ed10d47b72a1f"
+  },
+  {
     "external_id": "dut-news-inside-grassroots-movements-053b68359b",
     "content_type": "news",
     "title": "Inside Grassroots Movements",
