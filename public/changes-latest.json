@@ -12,13 +12,6 @@
     }
   },
   {
-    "dataset": "news",
-    "external_id": "dut-news-new-partners-philippines-have-joined-dut-call-2026-f99f31ad7c",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
     "dataset": "webinars",
     "external_id": "dut-webinar-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
