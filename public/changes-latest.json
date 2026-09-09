@@ -1,21 +1,5 @@
 [
   {
-    "dataset": "calls",
-    "external_id": "dut-call-dut-call-2026-dcf1208cd1",
-    "change_type": "modified",
-    "materiality": "standard",
-    "changed_fields": {
-      "content_hash": {
-        "old": "sha256:b1f136c80163f237c70f4b5b40d5a2d6eade3d54b20935ce366bd55803910702",
-        "new": "sha256:a1f8a4f3a6bb5a9b0461e582df6a705cb4d3e1b0480f4ae0d67012c178fe2dc0"
-      },
-      "documents_json": {
-        "old": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.38 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202026_Call%20Text.pdf\"}]",
-        "new": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.38 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202026_Call%20Text.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]"
-      }
-    }
-  },
-  {
     "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
