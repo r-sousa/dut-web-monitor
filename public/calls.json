@@ -86,12 +86,12 @@
     "stage1_deadline": "2026-11-17",
     "stage2_opening": "2027-02-01",
     "stage2_deadline": "2027-04-15",
-    "participating_countries_text": "The list of involved countries and funding agencies for the DUT Call 2026 will not be final until 1 September, when the call launches officially. Please refer to the National Annex (Annex A in the call text) for a list of already confirmed funding agencies.",
+    "participating_countries_text": "For a country list, scroll down to the paragraph \"participating countries\". For a list of specific funding agencies, please refer to the National Annex A (Annex A in the call text).",
     "topics_json": "[]",
     "documents_json": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.38 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202026_Call%20Text.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]",
     "source_description": null,
     "source_status": "active",
-    "retrieved_at": "2026-09-08T11:26:30Z",
-    "content_hash": "sha256:a1f8a4f3a6bb5a9b0461e582df6a705cb4d3e1b0480f4ae0d67012c178fe2dc0"
+    "retrieved_at": "2026-09-10T11:27:29Z",
+    "content_hash": "sha256:61545402cf89b18d6f75bffd91a8815f61d4c840d482081209f1a37a28c88884"
   }
 ]
