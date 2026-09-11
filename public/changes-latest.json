@@ -1,21 +1,5 @@
 [
   {
-    "dataset": "calls",
-    "external_id": "dut-call-dut-call-2026-dcf1208cd1",
-    "change_type": "modified",
-    "materiality": "standard",
-    "changed_fields": {
-      "content_hash": {
-        "old": "sha256:a1f8a4f3a6bb5a9b0461e582df6a705cb4d3e1b0480f4ae0d67012c178fe2dc0",
-        "new": "sha256:61545402cf89b18d6f75bffd91a8815f61d4c840d482081209f1a37a28c88884"
-      },
-      "participating_countries_text": {
-        "old": "The list of involved countries and funding agencies for the DUT Call 2026 will not be final until 1 September, when the call launches officially. Please refer to the National Annex (Annex A in the call text) for a list of already confirmed funding agencies.",
-        "new": "For a country list, scroll down to the paragraph \"participating countries\". For a list of specific funding agencies, please refer to the National Annex A (Annex A in the call text)."
-      }
-    }
-  },
-  {
     "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",

@@ -5,7 +5,6 @@
   "dataset_hash": "sha256:585ba7f045591cff67cd8c63bb1cdfc8c86a36cc63ba78034cf5384e350617aa",
   "status": "valid",
   "changed_datasets": [
-    "calls",
     "events",
     "webinars",
     "newsletters"
