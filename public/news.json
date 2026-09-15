@@ -60,6 +60,26 @@
     "content_hash": "sha256:773d13e7ebc2f867edcf8943ef0154cb4a3f9db08d396584044e5fef6e5e5bff"
   },
   {
+    "external_id": "dut-news-dut-european-forum-alpbach-b847c21059",
+    "content_type": "news",
+    "title": "DUT at the European Forum Alpbach",
+    "canonical_url": "https://dutpartnership.eu/news/dut-european-forum-alpbach",
+    "news_type": "News",
+    "published_year": 2026,
+    "published_month": 8,
+    "published_sort_date": "2026-08-01",
+    "author": "Kaja Piecyk and Johannes Riegler © Philipp Huber",
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-09-15T11:51:06Z",
+    "content_hash": "sha256:d85debeac6e57c544d9d36b903c350bd36d6e9d18f9c90f26dc681244fa395fd"
+  },
+  {
     "external_id": "dut-news-39-projects-suggested-funding-dut-call-2025-a9823c07f6",
     "content_type": "news",
     "title": "39 Projects Suggested for Funding in DUT Call 2025",
