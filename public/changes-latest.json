@@ -1,13 +1,6 @@
 [
   {
     "dataset": "events",
-    "external_id": "dut-event-urban-lunch-talk-48-making-liveable-streets-happen-b49782f666",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
-    "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
     "materiality": "high",
@@ -19,15 +12,8 @@
     }
   },
   {
-    "dataset": "news",
-    "external_id": "dut-news-dut-european-forum-alpbach-b847c21059",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
-    "dataset": "webinars",
-    "external_id": "dut-webinar-urban-lunch-talk-48-making-liveable-streets-happen-b49782f666",
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20working-20paper-20structural-20data-20needs-20for-20mobility-20research-pdf-a1c90083be",
     "change_type": "new",
     "materiality": "standard",
     "changed_fields": {}
