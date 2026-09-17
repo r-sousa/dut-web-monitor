@@ -6,7 +6,6 @@
   "status": "valid",
   "changed_datasets": [
     "events",
-    "publications",
     "newsletters"
   ],
   "record_counts": {
