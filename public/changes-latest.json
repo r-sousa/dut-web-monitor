@@ -1,5 +1,92 @@
 [
   {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2022-3a07e90dbb",
+    "change_type": "modified",
+    "materiality": "standard",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:c8033b140b6a983bbc4572a509d297900945ee47cac7c3ea7c5fcdddf1a7a4e2",
+        "new": "sha256:3b5b0b218aaa24afd8236dc5f377c9e261e25c920bbf75b80ea64937c896a251"
+      },
+      "documents_json": {
+        "old": "[{\"title\": \"DUT Call 2022_Call Text (pdf 1.53 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT_Call_2022_call_text.pdf\"}, {\"title\": \"DUT Call 2022_Projects suggested for funding (pdf 189.23 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT2022-Projects-suggested-for-Funding.pdf\"}, {\"title\": \"Projects Catalogue DUT Call 2022 (pdf 3.32 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/Project-Catalogue-Edited-09.2024-one-page.pdf\"}]",
+        "new": "[{\"title\": \"DUT Call 2022_Call Text (pdf 1.53 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT_Call_2022_call_text.pdf\"}, {\"title\": \"DUT Call 2022_Call Statistics/Agency Results (pdf 189.23 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT2022-Projects-suggested-for-Funding.pdf\"}, {\"title\": \"Projects Catalogue DUT Call 2022 (pdf 3.32 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/Project-Catalogue-Edited-09.2024-one-page.pdf\"}]"
+      }
+    }
+  },
+  {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2023-45f43e0475",
+    "change_type": "modified",
+    "materiality": "standard",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:4b349a80d22b5ffb3734f3aad259cb02fecf97d43f339690198291ff1dc09d67",
+        "new": "sha256:e7c9eed68c6a9ab4e55a1fb5ff4901c05a1fd25fe51f52c81775ab3dcd0ce16f"
+      },
+      "documents_json": {
+        "old": "[{\"title\": \"DUT Call 2023_Call Text (pdf 1.37 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT_Call_2023_call_text.pdf\"}, {\"title\": \"DUT Call 2023_Projects suggested for funding (pdf 187.26 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT-2023-Projects-suggested-for-Funding.pdf\"}, {\"title\": \"DUT Call 2023 Projects Catalogue (pdf 4.94 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-09/DUT%20Call%202023%20Projects%20Catalogue.pdf\"}]",
+        "new": "[{\"title\": \"DUT Call 2023_Call Text (pdf 1.37 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT_Call_2023_call_text.pdf\"}, {\"title\": \"DUT Call 2023_Call Statistics/Agency Results (pdf 187.26 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT-2023-Projects-suggested-for-Funding.pdf\"}, {\"title\": \"DUT Call 2023 Projects Catalogue (pdf 4.94 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-09/DUT%20Call%202023%20Projects%20Catalogue.pdf\"}]"
+      }
+    }
+  },
+  {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2024-d6eb5eee72",
+    "change_type": "modified",
+    "materiality": "standard",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:4d95204dcdcd60b25793f36d71a56c642f67d6692528ded0387342decb16006f",
+        "new": "sha256:8915c4b748f245982592510a1aaf49ff118cfe31dec20442a3eddbcd67352fd2"
+      },
+      "documents_json": {
+        "old": "[{\"title\": \"DUT Call 2024_Call Text (pdf 3.39 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT_Call_2024_call_text.pdf\"}, {\"title\": \"DUT Call 2024_Projects suggested for funding (pdf 185.94 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-10/DUT%202024%20Projects%20suggested%20for%20Funding_1.1.pdf\"}]",
+        "new": "[{\"title\": \"DUT Call 2024_Call Text (pdf 3.39 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-07/DUT_Call_2024_call_text.pdf\"}, {\"title\": \"DUT Call 2024_Call Statistics/Agency Results (pdf 185.94 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-10/DUT%202024%20Projects%20suggested%20for%20Funding_1.1.pdf\"}]"
+      }
+    }
+  },
+  {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2025-c568a2a9e1",
+    "change_type": "modified",
+    "materiality": "standard",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:b18bfc970769824069de5cb7f3821ca77fbefd3703d3ad492bc4a5335a54f00e",
+        "new": "sha256:3b7c2bb4487d7663795339fbe1eb9a33cc371325a71ef9cdfc3d912ea188a734"
+      },
+      "documents_json": {
+        "old": "[{\"title\": \"DUT Call 2025_Call Text (pdf 2.24 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-10/DUT%20Call%202025_Call%20Text_0.pdf\"}]",
+        "new": "[{\"title\": \"DUT Call 2025_Call Text (pdf 2.24 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2025-10/DUT%20Call%202025_Call%20Text_0.pdf\"}, {\"title\": \"DUT Call 2025_Call Statistics/Agency Results (pdf 260.81 KB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202025_Call%20StatisticsAgency%20Results.pdf\"}]"
+      }
+    }
+  },
+  {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2026-dcf1208cd1",
+    "change_type": "modified",
+    "materiality": "standard",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:61545402cf89b18d6f75bffd91a8815f61d4c840d482081209f1a37a28c88884",
+        "new": "sha256:72988712fa3bd72d5d5e0e89680d01d770226fab6f2a3b7e4ca194f88a7f6945"
+      },
+      "documents_json": {
+        "old": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.38 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202026_Call%20Text.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]",
+        "new": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.43 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202026_Call%20Text_0.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]"
+      }
+    }
+  },
+  {
+    "dataset": "events",
+    "external_id": "dut-event-research-impact-innovations-climate-transition-85506ba1d3",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
     "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",

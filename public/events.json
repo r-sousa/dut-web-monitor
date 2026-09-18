@@ -935,6 +935,23 @@
     "content_hash": "sha256:02483156651c6ccd68c96995f49a6037007ce4889a0faf1df1cb74099ebfce3b"
   },
   {
+    "external_id": "dut-event-research-impact-innovations-climate-transition-85506ba1d3",
+    "content_type": "event",
+    "title": "Research to Impact: Innovations for the Climate Transition",
+    "canonical_url": "https://dutpartnership.eu/events/research-impact-innovations-climate-transition",
+    "start_date": null,
+    "end_date": null,
+    "date_text": "27 Oct",
+    "time_text": "09.00 – 17.00 (CET)",
+    "location": "Rome",
+    "mode": "on-site",
+    "registration_url": null,
+    "description_excerpt": "Date 27 Oct Time 09.00 – 17.00 (CET) Location Rome",
+    "source_status": "active",
+    "retrieved_at": "2026-09-18T11:23:58Z",
+    "content_hash": "sha256:0c2c484b45948326138c2622ba76a854dd613a61804ba1a0ad73067ce7a5db98"
+  },
+  {
     "external_id": "dut-event-smart-city-expo-world-congress-2024-88ce0791d7",
     "content_type": "event",
     "title": "Smart City Expo World Congress 2024",
