@@ -306,6 +306,23 @@
     "content_hash": "sha256:07dc6c7880ded3626769160b609fb07841358527b785f1dfa46fe76549a75fa2"
   },
   {
+    "external_id": "dut-event-dut-brussels-climate-week-c34e6329c2",
+    "content_type": "event",
+    "title": "DUT at Brussels Climate Week",
+    "canonical_url": "https://dutpartnership.eu/events/dut-brussels-climate-week",
+    "start_date": "2026-10-12",
+    "end_date": "2026-10-16",
+    "date_text": "12 Oct – 16 Oct 2026",
+    "time_text": "09.00 – 17.30 (CET)",
+    "location": "Brussels",
+    "mode": "on-site",
+    "registration_url": null,
+    "description_excerpt": "Date 12 Oct – 16 Oct 2026 Time 09.00 – 17.30 (CET) Location Brussels",
+    "source_status": "active",
+    "retrieved_at": "2026-09-23T11:45:55Z",
+    "content_hash": "sha256:18f366909fef67899b6f8bd14896cec36e6757bdd873642837d65b57c536acaa"
+  },
+  {
     "external_id": "dut-event-dut-call-2022-info-day-ea55ab0cf8",
     "content_type": "event",
     "title": "DUT Call 2022 - Info Day",
