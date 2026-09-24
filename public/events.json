@@ -1537,14 +1537,14 @@
     "start_date": null,
     "end_date": null,
     "date_text": "7 Oct",
-    "time_text": "12.00 – 12.00 (CEST)",
+    "time_text": "12.00 – 13.00 (CEST)",
     "location": "Online",
     "mode": "online",
     "registration_url": "https://us02web.zoom.us/webinar/register/WN_WaqLo_FEShWxHUeNJ404Hw",
-    "description_excerpt": "Date 7 Oct Time 12.00 – 12.00 (CEST) Location Online",
+    "description_excerpt": "Date 7 Oct Time 12.00 – 13.00 (CEST) Location Online",
     "source_status": "active",
-    "retrieved_at": "2026-09-15T11:51:06Z",
-    "content_hash": "sha256:c52a50145a8ad96611990a66f138c3059aa0ce19ecd09161890e6f0e27a15ba2"
+    "retrieved_at": "2026-09-24T11:54:37Z",
+    "content_hash": "sha256:7d7a6773f415abcbcbc3c855a5495e0a9bc44813e85d1b26ec0c307fee4f11e3"
   },
   {
     "external_id": "dut-event-urban-transitions-mission-global-innovation-summit-2024-49b38a14e4",
