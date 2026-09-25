@@ -1,26 +1,6 @@
 [
   {
     "dataset": "events",
-    "external_id": "dut-event-urban-lunch-talk-48-making-liveable-streets-happen-b49782f666",
-    "change_type": "modified",
-    "materiality": "standard",
-    "changed_fields": {
-      "content_hash": {
-        "old": "sha256:c52a50145a8ad96611990a66f138c3059aa0ce19ecd09161890e6f0e27a15ba2",
-        "new": "sha256:7d7a6773f415abcbcbc3c855a5495e0a9bc44813e85d1b26ec0c307fee4f11e3"
-      },
-      "description_excerpt": {
-        "old": "Date 7 Oct Time 12.00 – 12.00 (CEST) Location Online",
-        "new": "Date 7 Oct Time 12.00 – 13.00 (CEST) Location Online"
-      },
-      "time_text": {
-        "old": "12.00 – 12.00 (CEST)",
-        "new": "12.00 – 13.00 (CEST)"
-      }
-    }
-  },
-  {
-    "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
     "materiality": "high",
@@ -28,26 +8,6 @@
       "source_status": {
         "old": "possibly_removed",
         "new": "possibly_removed"
-      }
-    }
-  },
-  {
-    "dataset": "webinars",
-    "external_id": "dut-webinar-urban-lunch-talk-48-making-liveable-streets-happen-b49782f666",
-    "change_type": "modified",
-    "materiality": "standard",
-    "changed_fields": {
-      "content_hash": {
-        "old": "sha256:f4868ae6f4511bdaf642e684c3515a285bd49715ce1812348c425edf9bd66b4d",
-        "new": "sha256:2e43444cc32462d5dfdf2c25e65c12ab00f12ad0a4e61c24f0e8b896b5d07c2f"
-      },
-      "description_excerpt": {
-        "old": "Date 7 Oct Time 12.00 – 12.00 (CEST) Location Online",
-        "new": "Date 7 Oct Time 12.00 – 13.00 (CEST) Location Online"
-      },
-      "time_text": {
-        "old": "12.00 – 12.00 (CEST)",
-        "new": "12.00 – 13.00 (CEST)"
       }
     }
   },
