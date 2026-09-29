@@ -12,6 +12,13 @@
     }
   },
   {
+    "dataset": "news",
+    "external_id": "dut-news-circularity-beyond-recycling-can-cities-put-people-first-adb6924b84",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
     "dataset": "newsletters",
     "external_id": "dut-newsletter-dut-newsletter-april2024-365da16a82",
     "change_type": "possibly_removed",

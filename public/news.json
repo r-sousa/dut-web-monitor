@@ -60,6 +60,26 @@
     "content_hash": "sha256:773d13e7ebc2f867edcf8943ef0154cb4a3f9db08d396584044e5fef6e5e5bff"
   },
   {
+    "external_id": "dut-news-circularity-beyond-recycling-can-cities-put-people-first-adb6924b84",
+    "content_type": "news",
+    "title": "Circularity Beyond Recycling: Can Cities Put People First?",
+    "canonical_url": "https://dutpartnership.eu/news/circularity-beyond-recycling-can-cities-put-people-first",
+    "news_type": "Story",
+    "published_year": 2026,
+    "published_month": 9,
+    "published_sort_date": "2026-09-01",
+    "author": "Ana Calvo",
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-09-29T13:01:08Z",
+    "content_hash": "sha256:785e64243abb2a189fc46bbe44375c40f1781c94b52ce232227c9dfc69c5f4d4"
+  },
+  {
     "external_id": "dut-news-dut-european-forum-alpbach-b847c21059",
     "content_type": "news",
     "title": "DUT at the European Forum Alpbach",
