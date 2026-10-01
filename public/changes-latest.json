@@ -12,13 +12,6 @@
     }
   },
   {
-    "dataset": "publications",
-    "external_id": "dut-publication-dut-20knowledge-20hub-cue-20defining-20and-20validating-20impact-20methods-20for-20stakeholder-supported-20monitoring-20and-20evaluation-pdf-d9e77c3364",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
     "dataset": "newsletters",
     "external_id": "dut-newsletter-dut-newsletter-april2024-365da16a82",
     "change_type": "possibly_removed",
