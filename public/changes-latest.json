@@ -1,5 +1,21 @@
 [
   {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2026-dcf1208cd1",
+    "change_type": "modified",
+    "materiality": "standard",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:72988712fa3bd72d5d5e0e89680d01d770226fab6f2a3b7e4ca194f88a7f6945",
+        "new": "sha256:834ca79fdf52e5d2d832784ce259eedd132ca41da34556c06fd7018f1bd16974"
+      },
+      "documents_json": {
+        "old": "[{\"title\": \"DUT Call 2026_Call Text.pdf (pdf 3.43 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Call%202026_Call%20Text_0.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]",
+        "new": "[{\"title\": \"DUT Call 2026_Call Text_0.pdf (pdf 3.42 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-10/DUT%20Call%202026_Call%20Text_0.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]"
+      }
+    }
+  },
+  {
     "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
