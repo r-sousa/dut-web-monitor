@@ -12,22 +12,6 @@
     }
   },
   {
-    "dataset": "webinars",
-    "external_id": "dut-webinar-urban-lunch-talk-48-making-liveable-streets-happen-b49782f666",
-    "change_type": "modified",
-    "materiality": "standard",
-    "changed_fields": {
-      "content_hash": {
-        "old": "sha256:2e43444cc32462d5dfdf2c25e65c12ab00f12ad0a4e61c24f0e8b896b5d07c2f",
-        "new": "sha256:502462c5ee54b0f765f0d04b8010eeaa8299c800592f88beb106c1d6ed2ea2bb"
-      },
-      "speakers_json": {
-        "old": "[\"Lucy Sadler, Independent Air Quality and Transport Policy Consultant, Sadler Consultants, UVAR4US project\", \"Benjamin Buettner, Researcher at Technical University of Munich, UNLOCK15 project\", \"Fredrik Pettersson-Lofstedt, Associate Professor at Lund University, CONFLICTEDSTREETS project\"]",
-        "new": "[\"Lucy Sadler, Independent Air Quality and Transport Policy Consultant, Sadler Consultants, UVAR4US project\", \"Benjamin Buettner, Professor at Technical University of Munich, UNLOCK15 project\", \"Fredrik Pettersson-Lofstedt, Associate Professor at Lund University, CONFLICTEDSTREETS project\"]"
-      }
-    }
-  },
-  {
     "dataset": "newsletters",
     "external_id": "dut-newsletter-dut-newsletter-april2024-365da16a82",
     "change_type": "possibly_removed",
