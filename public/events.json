@@ -765,6 +765,23 @@
     "content_hash": "sha256:8434258cc04fab42330a99a6a3a30b030cd70b99e22659beda1f79d60a3a3622"
   },
   {
+    "external_id": "dut-event-dut-set-plan-conference-f14550b857",
+    "content_type": "event",
+    "title": "DUT at the SET Plan Conference",
+    "canonical_url": "https://dutpartnership.eu/events/dut-set-plan-conference",
+    "start_date": null,
+    "end_date": null,
+    "date_text": "5 Nov",
+    "time_text": "09.00 – 10.00 (GMT)",
+    "location": "Ireland",
+    "mode": "on-site",
+    "registration_url": null,
+    "description_excerpt": "Date 5 Nov Time 09.00 – 10.00 (GMT) Location Ireland",
+    "source_status": "active",
+    "retrieved_at": "2026-10-12T15:38:21Z",
+    "content_hash": "sha256:47e164d0956704116f48ced02d3528162abfc2d59c57873fe2daf9f023f8b03f"
+  },
+  {
     "external_id": "dut-event-dut-smart-city-expo-world-congress-a10d281155",
     "content_type": "event",
     "title": "DUT at the Smart City Expo World Congress",
