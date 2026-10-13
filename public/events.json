@@ -629,6 +629,23 @@
     "content_hash": "sha256:514ed794952ebc4ab7b748738de05cdd7fcea85e8f54aec616b813497b0fed55"
   },
   {
+    "external_id": "dut-event-dut-eui-nature-restoration-regulation-capacity-building-event-faecfb91bb",
+    "content_type": "event",
+    "title": "DUT at the EUI Nature Restoration Regulation capacity-building event",
+    "canonical_url": "https://dutpartnership.eu/events/dut-eui-nature-restoration-regulation-capacity-building-event",
+    "start_date": null,
+    "end_date": null,
+    "date_text": "21 Oct",
+    "time_text": "10.05 – 11.30 (CET)",
+    "location": "Vienna",
+    "mode": "on-site",
+    "registration_url": "https://www.urban-initiative.eu/nature-restoration-law-cbe",
+    "description_excerpt": "Date 21 Oct Time 10.05 – 11.30 (CET) Location Vienna",
+    "source_status": "active",
+    "retrieved_at": "2026-10-13T14:19:47Z",
+    "content_hash": "sha256:af9e9ec3a17160140c9683af9a8d36f467c2c9ed57be36cf114c34d256fe441f"
+  },
+  {
     "external_id": "dut-event-dut-innovate4cities-i4c-2026-d00f251e69",
     "content_type": "event",
     "title": "DUT at Innovate4Cities (I4C) 2026",
