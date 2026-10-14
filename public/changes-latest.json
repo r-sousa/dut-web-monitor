@@ -1,13 +1,6 @@
 [
   {
     "dataset": "events",
-    "external_id": "dut-event-dut-eui-nature-restoration-regulation-capacity-building-event-faecfb91bb",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
-    "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
     "materiality": "high",
