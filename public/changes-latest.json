@@ -12,13 +12,6 @@
     }
   },
   {
-    "dataset": "publications",
-    "external_id": "dut-publication-kh-15minc-20-20making-liveable-streets-happen-pdf-0ff886021c",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
     "dataset": "newsletters",
     "external_id": "dut-newsletter-dut-newsletter-april2024-365da16a82",
     "change_type": "possibly_removed",
