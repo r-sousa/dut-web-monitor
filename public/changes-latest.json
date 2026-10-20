@@ -12,6 +12,20 @@
     }
   },
   {
+    "dataset": "news",
+    "external_id": "dut-news-european-partnership-resilient-built-environment-0980155349",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-resilient-built-environment-partnership-statement-20-20oct-0-pdf-d3469be2c6",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
     "dataset": "newsletters",
     "external_id": "dut-newsletter-dut-newsletter-april2024-365da16a82",
     "change_type": "possibly_removed",

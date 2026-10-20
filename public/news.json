@@ -1,5 +1,25 @@
 [
   {
+    "external_id": "dut-news-european-partnership-resilient-built-environment-0980155349",
+    "content_type": "news",
+    "title": "A European Partnership on Resilient Built Environment",
+    "canonical_url": "https://dutpartnership.eu/news/european-partnership-resilient-built-environment",
+    "news_type": "News",
+    "published_year": 2026,
+    "published_month": 10,
+    "published_sort_date": "2026-10-01",
+    "author": "DUT and Built4People",
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-10-20T11:46:51Z",
+    "content_hash": "sha256:fce61f6b352cf40f83b588c32cebd8506b9924ddb5567f5b0c24a78d89c7f37d"
+  },
+  {
     "external_id": "dut-news-dut-call-2026-now-open-4a852b864f",
     "content_type": "news",
     "title": "The DUT Call 2026 Is Now Open!",
