@@ -156,17 +156,17 @@
     "content_hash": "sha256:068d21b4b536a68e1141b796b824614caa25b8737e00e15c8362f19862a76a81"
   },
   {
-    "external_id": "dut-publication-resilient-built-environment-partnership-statement-20-20oct-0-pdf-d3469be2c6",
+    "external_id": "dut-publication-resilient-built-environment-partnership-statement-20-20oct-new-pdf-57fd980ddd",
     "content_type": "publication",
-    "title": "DUT and Built4People joint position on A European Partnership on Resilient Built Environment",
+    "title": "DUT and Built4People position on A European Partnership on Resilient Built Environment .pdf",
     "category": "DUT Publications",
-    "document_url": "https://dutpartnership.eu/sites/default/files/2026-10/Resilient_Built_Environment_Partnership_Statement_20%20Oct_0.pdf",
+    "document_url": "https://dutpartnership.eu/sites/default/files/2026-10/Resilient_Built_Environment_Partnership_Statement_20%20Oct_New.pdf",
     "file_type": "pdf",
-    "file_size_text": "pdf 204.75 KB",
+    "file_size_text": "pdf 242.86 KB",
     "canonical_url": "https://dutpartnership.eu/library",
     "source_status": "active",
-    "retrieved_at": "2026-10-20T11:46:51Z",
-    "content_hash": "sha256:6bd456ed04a0bd93dfcbcaae56589fbb4f47e04b20a750ace4e1423f98f9c3de"
+    "retrieved_at": "2026-10-22T12:01:17Z",
+    "content_hash": "sha256:42a0045213d30df0acfaf49064d049dfc832f62f59f6251ae331b8242ea29a9c"
   },
   {
     "external_id": "dut-publication-dut-20roadmap-202025-digital-pdf-2ca7af43f5",
@@ -271,5 +271,18 @@
     "source_status": "active",
     "retrieved_at": "2026-08-05T23:01:38Z",
     "content_hash": "sha256:4057d8f934dad58a7915c9b39ae1b48ed617c8439825651dba990ca096f6f6b6"
+  },
+  {
+    "external_id": "dut-publication-resilient-built-environment-partnership-statement-20-20oct-0-pdf-d3469be2c6",
+    "content_type": "publication",
+    "title": "DUT and Built4People joint position on A European Partnership on Resilient Built Environment",
+    "category": "DUT Publications",
+    "document_url": "https://dutpartnership.eu/sites/default/files/2026-10/Resilient_Built_Environment_Partnership_Statement_20%20Oct_0.pdf",
+    "file_type": "pdf",
+    "file_size_text": "pdf 204.75 KB",
+    "canonical_url": "https://dutpartnership.eu/library",
+    "source_status": "possibly_removed",
+    "retrieved_at": "2026-10-20T11:46:51Z",
+    "content_hash": "sha256:6bd456ed04a0bd93dfcbcaae56589fbb4f47e04b20a750ace4e1423f98f9c3de"
   }
 ]
