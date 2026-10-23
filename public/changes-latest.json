@@ -13,19 +13,12 @@
   },
   {
     "dataset": "publications",
-    "external_id": "dut-publication-resilient-built-environment-partnership-statement-20-20oct-new-pdf-57fd980ddd",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
-    "dataset": "publications",
     "external_id": "dut-publication-resilient-built-environment-partnership-statement-20-20oct-0-pdf-d3469be2c6",
     "change_type": "possibly_removed",
     "materiality": "high",
     "changed_fields": {
       "source_status": {
-        "old": "active",
+        "old": "possibly_removed",
         "new": "possibly_removed"
       }
     }
