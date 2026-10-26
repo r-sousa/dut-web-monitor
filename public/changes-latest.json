@@ -13,6 +13,25 @@
   },
   {
     "dataset": "publications",
+    "external_id": "dut-publication-knowledge-20hub-15minc-20-20making-liveable-streets-happen-202026-pdf-411283871c",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-kh-15minc-20-20making-liveable-streets-happen-pdf-0ff886021c",
+    "change_type": "possibly_removed",
+    "materiality": "high",
+    "changed_fields": {
+      "source_status": {
+        "old": "active",
+        "new": "possibly_removed"
+      }
+    }
+  },
+  {
+    "dataset": "publications",
     "external_id": "dut-publication-resilient-built-environment-partnership-statement-20-20oct-0-pdf-d3469be2c6",
     "change_type": "possibly_removed",
     "materiality": "high",
