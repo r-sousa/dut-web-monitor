@@ -1,6 +1,13 @@
 [
   {
     "dataset": "events",
+    "external_id": "dut-event-dut-smart-city-expo-barcelona-6c39011081",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
     "materiality": "high",
@@ -13,19 +20,12 @@
   },
   {
     "dataset": "publications",
-    "external_id": "dut-publication-knowledge-20hub-15minc-20-20making-liveable-streets-happen-202026-pdf-411283871c",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
-    "dataset": "publications",
     "external_id": "dut-publication-kh-15minc-20-20making-liveable-streets-happen-pdf-0ff886021c",
     "change_type": "possibly_removed",
     "materiality": "high",
     "changed_fields": {
       "source_status": {
-        "old": "active",
+        "old": "possibly_removed",
         "new": "possibly_removed"
       }
     }

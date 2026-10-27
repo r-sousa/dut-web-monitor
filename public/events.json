@@ -799,6 +799,23 @@
     "content_hash": "sha256:47e164d0956704116f48ced02d3528162abfc2d59c57873fe2daf9f023f8b03f"
   },
   {
+    "external_id": "dut-event-dut-smart-city-expo-barcelona-6c39011081",
+    "content_type": "event",
+    "title": "DUT at Smart City Expo in Barcelona",
+    "canonical_url": "https://dutpartnership.eu/events/dut-smart-city-expo-barcelona",
+    "start_date": "2026-11-03",
+    "end_date": "2026-11-05",
+    "date_text": "3 Nov – 5 Nov 2026",
+    "time_text": "08.11 – 17.11 (CET)",
+    "location": "Spain",
+    "mode": "on-site",
+    "registration_url": null,
+    "description_excerpt": "Date 3 Nov – 5 Nov 2026 Time 08.11 – 17.11 (CET) Location Spain",
+    "source_status": "active",
+    "retrieved_at": "2026-10-27T12:21:20Z",
+    "content_hash": "sha256:f53b11d1e81e2d5219b824e80e081467280dd95b0ef8db798d1fe02c17686ee7"
+  },
+  {
     "external_id": "dut-event-dut-smart-city-expo-world-congress-a10d281155",
     "content_type": "event",
     "title": "DUT at the Smart City Expo World Congress",
