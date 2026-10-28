@@ -867,6 +867,23 @@
     "content_hash": "sha256:0466c605aeae165cfa4cedf18d3f50ff1642dbee99c17d76ec7a3416432897e6"
   },
   {
+    "external_id": "dut-event-dut-urban-living-lab-training-a5b680f098",
+    "content_type": "event",
+    "title": "DUT Urban Living Lab Training",
+    "canonical_url": "https://dutpartnership.eu/events/dut-urban-living-lab-training",
+    "start_date": null,
+    "end_date": null,
+    "date_text": "11 Nov",
+    "time_text": "14.00 – 16.00 (CET)",
+    "location": "Online",
+    "mode": "online",
+    "registration_url": null,
+    "description_excerpt": "Date 11 Nov Time 14.00 – 16.00 (CET) Location Online",
+    "source_status": "active",
+    "retrieved_at": "2026-10-28T13:06:46Z",
+    "content_hash": "sha256:287c2e01cc101a0a6e01b31ab1e1be589f2bd422d006e95ccf5c37068181675b"
+  },
+  {
     "external_id": "dut-event-duts-mapping-15-minute-city-practices-results-webinar-42a62778b2",
     "content_type": "event",
     "title": "DUT’s Mapping of 15-minute City Practices – Results Webinar",
