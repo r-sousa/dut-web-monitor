@@ -901,6 +901,23 @@
     "content_hash": "sha256:7ae8ff6570766c3d6f3fbbdd26cfc69357479ad82790e06fe64bfaa21c0598af"
   },
   {
+    "external_id": "dut-event-future-funding-info-webinar-dut-projects-3194bcab62",
+    "content_type": "event",
+    "title": "Future Funding info webinar for DUT projects",
+    "canonical_url": "https://dutpartnership.eu/events/future-funding-info-webinar-dut-projects",
+    "start_date": null,
+    "end_date": null,
+    "date_text": "12 Nov",
+    "time_text": "10.00 – 11.00 (CET)",
+    "location": "Online",
+    "mode": "online",
+    "registration_url": null,
+    "description_excerpt": "Date 12 Nov Time 10.00 – 11.00 (CET) Location Online",
+    "source_status": "active",
+    "retrieved_at": "2026-10-29T13:12:36Z",
+    "content_hash": "sha256:4630f4372344cf2fdcd26d8c30336e5152f8923a462f38bb405093164dff4677"
+  },
+  {
     "external_id": "dut-event-how-make-urban-resilience-work-city-case-studies-and-role-research-and-innovation-dut-a2d8dbbb09",
     "content_type": "event",
     "title": "How to make urban resilience work: city case studies and the role of research and innovation from the DUT Partnership and URBACT",
