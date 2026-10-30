@@ -1,13 +1,6 @@
 [
   {
     "dataset": "events",
-    "external_id": "dut-event-future-funding-info-webinar-dut-projects-3194bcab62",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
-    "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
     "materiality": "high",
@@ -17,6 +10,13 @@
         "new": "possibly_removed"
       }
     }
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-utm-20ped-20a-20global-20perspective-201097-iqs-public-web-pdf-ae77195019",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
   },
   {
     "dataset": "publications",
