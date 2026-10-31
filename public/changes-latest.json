@@ -13,13 +13,6 @@
   },
   {
     "dataset": "publications",
-    "external_id": "dut-publication-utm-20ped-20a-20global-20perspective-201097-iqs-public-web-pdf-ae77195019",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
-    "dataset": "publications",
     "external_id": "dut-publication-kh-15minc-20-20making-liveable-streets-happen-pdf-0ff886021c",
     "change_type": "possibly_removed",
     "materiality": "high",
