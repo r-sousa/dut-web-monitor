@@ -884,6 +884,23 @@
     "content_hash": "sha256:287c2e01cc101a0a6e01b31ab1e1be589f2bd422d006e95ccf5c37068181675b"
   },
   {
+    "external_id": "dut-event-dut-urban-transitions-mission-global-innovation-summit-2026-03c8103c5f",
+    "content_type": "event",
+    "title": "DUT at the Urban Transitions Mission Global Innovation Summit 2026",
+    "canonical_url": "https://dutpartnership.eu/events/dut-urban-transitions-mission-global-innovation-summit-2026",
+    "start_date": "2026-11-03",
+    "end_date": null,
+    "date_text": "3 Nov",
+    "time_text": "11.30 – 13.00 (CET)",
+    "location": "Spain",
+    "mode": "on-site",
+    "registration_url": null,
+    "description_excerpt": "Date 3 Nov Time 11.30 – 13.00 (CET) Location Spain",
+    "source_status": "active",
+    "retrieved_at": "2026-11-02T16:09:32Z",
+    "content_hash": "sha256:7495ef46edef565339b892f134f6d26405d2dec62e540b52b4689614241dffb8"
+  },
+  {
     "external_id": "dut-event-duts-mapping-15-minute-city-practices-results-webinar-42a62778b2",
     "content_type": "event",
     "title": "DUT’s Mapping of 15-minute City Practices – Results Webinar",
