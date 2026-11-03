@@ -1,5 +1,25 @@
 [
   {
+    "external_id": "dut-news-positive-energy-districts-and-neighbourhoods-global-perspective-district-scale-urban-66cc2a5e55",
+    "content_type": "news",
+    "title": "Positive Energy Districts and Neighbourhoods: A Global Perspective on District-Scale Urban Transitions",
+    "canonical_url": "https://dutpartnership.eu/news/positive-energy-districts-and-neighbourhoods-global-perspective-district-scale-urban",
+    "news_type": "News",
+    "published_year": 2026,
+    "published_month": 11,
+    "published_sort_date": "2026-11-01",
+    "author": "the Urban Transitions Mission (UTM) and",
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-11-03T14:25:25Z",
+    "content_hash": "sha256:d00afa134a859ea9f7bcdb24fa8dc3fe561b0411a344ee040b5a228d966f812e"
+  },
+  {
     "external_id": "dut-news-european-partnership-resilient-built-environment-0980155349",
     "content_type": "news",
     "title": "A European Partnership on Resilient Built Environment",
