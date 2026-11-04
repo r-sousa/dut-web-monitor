@@ -1,6 +1,13 @@
 [
   {
     "dataset": "events",
+    "external_id": "dut-event-join-dut-sustainable-places-conference-luxembourg-5d7f3ae319",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
+  },
+  {
+    "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
     "materiality": "high",
@@ -10,13 +17,6 @@
         "new": "possibly_removed"
       }
     }
-  },
-  {
-    "dataset": "news",
-    "external_id": "dut-news-positive-energy-districts-and-neighbourhoods-global-perspective-district-scale-urban-66cc2a5e55",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
   },
   {
     "dataset": "publications",

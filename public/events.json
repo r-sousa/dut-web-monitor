@@ -952,6 +952,23 @@
     "content_hash": "sha256:5e42e60310d51736f1d6a00048f89fda05723bbc0a2c6b45961ff3b605fab500"
   },
   {
+    "external_id": "dut-event-join-dut-sustainable-places-conference-luxembourg-5d7f3ae319",
+    "content_type": "event",
+    "title": "Join DUT at the Sustainable Places conference in Luxembourg!",
+    "canonical_url": "https://dutpartnership.eu/events/join-dut-sustainable-places-conference-luxembourg",
+    "start_date": "2026-12-02",
+    "end_date": "2026-12-04",
+    "date_text": "2 Dec – 4 Dec 2026",
+    "time_text": "09.00 – 17.30 (CET)",
+    "location": "Luxembourg",
+    "mode": "on-site",
+    "registration_url": null,
+    "description_excerpt": "Date 2 Dec – 4 Dec 2026 Time 09.00 – 17.30 (CET) Location Luxembourg",
+    "source_status": "active",
+    "retrieved_at": "2026-11-04T14:40:09Z",
+    "content_hash": "sha256:0e9e8483971f4a15c524de1987523907c6fbbf5f1ee55ab2e2a042ac83052bae"
+  },
+  {
     "external_id": "dut-event-knowlege-hub-webinar-rethinking-measurement-accessibility-and-proximity-6854bd2bf0",
     "content_type": "event",
     "title": "Knowlege Hub Webinar: Rethinking the Measurement of Accessibility and Proximity",
