@@ -20,6 +20,26 @@
     "content_hash": "sha256:d00afa134a859ea9f7bcdb24fa8dc3fe561b0411a344ee040b5a228d966f812e"
   },
   {
+    "external_id": "dut-news-dut-city-panel-met-szeged-e6b2733d3e",
+    "content_type": "news",
+    "title": "The DUT City Panel met in Szeged",
+    "canonical_url": "https://dutpartnership.eu/news/dut-city-panel-met-szeged",
+    "news_type": "News",
+    "published_year": 2026,
+    "published_month": 10,
+    "published_sort_date": "2026-10-01",
+    "author": "Ida Mårtensson",
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-11-06T14:23:02Z",
+    "content_hash": "sha256:6d6b020e8636a8434e742e1f97e84da52d0a3703139593267cf8d1b7f32f78ff"
+  },
+  {
     "external_id": "dut-news-european-partnership-resilient-built-environment-0980155349",
     "content_type": "news",
     "title": "A European Partnership on Resilient Built Environment",

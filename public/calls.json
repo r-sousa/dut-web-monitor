@@ -88,10 +88,10 @@
     "stage2_deadline": "2027-04-15",
     "participating_countries_text": "For a country list, scroll down to the paragraph \"participating countries\". For a list of specific funding agencies, please refer to the National Annex A (Annex A in the call text).",
     "topics_json": "[]",
-    "documents_json": "[{\"title\": \"DUT Call 2026_Call Text_0.pdf (pdf 3.42 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-10/DUT%20Call%202026_Call%20Text_0.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]",
+    "documents_json": "[{\"title\": \"DUT Call 2026_Call Text_0.pdf (pdf 3.42 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-11/DUT%20Call%202026_Call%20Text_0.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]",
     "source_description": null,
     "source_status": "active",
-    "retrieved_at": "2026-10-05T14:51:24Z",
-    "content_hash": "sha256:834ca79fdf52e5d2d832784ce259eedd132ca41da34556c06fd7018f1bd16974"
+    "retrieved_at": "2026-11-06T14:23:02Z",
+    "content_hash": "sha256:9d625f83dbfee3b0eaeccf4d2dea90a57f1614d345d87b24d3f024ba5c78595a"
   }
 ]
