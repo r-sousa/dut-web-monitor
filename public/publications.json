@@ -26,6 +26,19 @@
     "content_hash": "sha256:92f3c2efbec023e0cfc71fcc8d89f818af0fff2bbc64fa3c985d404a2a1d159a"
   },
   {
+    "external_id": "dut-publication-new-20dut-20kh-15minc-20structural-20data-20needs-20for-20mobility-20research-pdf-ef52919493",
+    "content_type": "publication",
+    "title": "DUT Knowledge Hub_15minC Structural Data Needs for Mobility Research",
+    "category": "DUT Knowledge Hub Outputs",
+    "document_url": "https://dutpartnership.eu/sites/default/files/2026-11/NEW%20DUT%20KH_15minC%20Structural%20Data%20Needs%20for%20Mobility%20Research.pdf",
+    "file_type": "pdf",
+    "file_size_text": "pdf 10.4 MB",
+    "canonical_url": "https://dutpartnership.eu/library",
+    "source_status": "active",
+    "retrieved_at": "2026-11-07T13:13:05Z",
+    "content_hash": "sha256:e3340e48fc67fea19fe56acd8dc2df1e2fb32b3bc20d7562698f1520eb2c4773"
+  },
+  {
     "external_id": "dut-publication-dut-20knowledge-20hub-cue-20defining-20and-20validating-20impact-20methods-20for-20stakeholder-supported-20monitoring-20and-20evaluation-pdf-d9e77c3364",
     "content_type": "publication",
     "title": "DUT Knowledge Hub_CUE Defining and Validating Impact Methods for Stakeholder-supported Monitoring and Evaluation.pdf",
@@ -80,28 +93,15 @@
   {
     "external_id": "dut-publication-knowledge-20hub-15minc-20-20making-liveable-streets-happen-202026-pdf-411283871c",
     "content_type": "publication",
-    "title": "Knowledge Hub_15minC Making_Liveable_Streets_Happen 2026.pdf",
+    "title": "Knowledge Hub_15minC Making Liveable Streets Happen 2026.pdf",
     "category": "DUT Knowledge Hub Outputs",
     "document_url": "https://dutpartnership.eu/sites/default/files/2026-10/Knowledge%20Hub_15minC%20%20Making_Liveable_Streets_Happen%202026.pdf",
     "file_type": "pdf",
     "file_size_text": "pdf 7.48 MB",
     "canonical_url": "https://dutpartnership.eu/library",
     "source_status": "active",
-    "retrieved_at": "2026-10-26T13:13:47Z",
-    "content_hash": "sha256:f8951aa87015ec8e1dddf98eb7ae8e837fdd2bd7ddb18d5fba0ae643309e3517"
-  },
-  {
-    "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20working-20paper-20structural-20data-20needs-20for-20mobility-20research-pdf-a1c90083be",
-    "content_type": "publication",
-    "title": "Working Paper from DUT Knowledge Hub_ 15minC Structural Data Needs for Mobility Research.pdf",
-    "category": "DUT Knowledge Hub Outputs",
-    "document_url": "https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Knowledge%20Hub_15minC%20Working%20Paper.%20Structural%20Data%20Needs%20for%20Mobility%20Research.pdf",
-    "file_type": "pdf",
-    "file_size_text": "pdf 5.57 MB",
-    "canonical_url": "https://dutpartnership.eu/library",
-    "source_status": "active",
-    "retrieved_at": "2026-09-16T11:44:20Z",
-    "content_hash": "sha256:1a5d4a5360e76b2b76ddb66c24f320d96ba11b1e88eeb47a84d8ed47f8937d7e"
+    "retrieved_at": "2026-11-07T13:13:05Z",
+    "content_hash": "sha256:2998feb27c4f55d511de5067ba1845918550cca1e7c083e8beef011ce82f214c"
   },
   {
     "external_id": "dut-publication-dut-20call-202023-20projects-20catalogue-pdf-910c76a0d4",
@@ -284,6 +284,19 @@
     "source_status": "active",
     "retrieved_at": "2026-10-30T13:05:10Z",
     "content_hash": "sha256:b2d2af5684013b7a63c9170a7af66521377295cf98cc0b2c48cb0c10ff91014b"
+  },
+  {
+    "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20working-20paper-20structural-20data-20needs-20for-20mobility-20research-pdf-a1c90083be",
+    "content_type": "publication",
+    "title": "Working Paper from DUT Knowledge Hub_ 15minC Structural Data Needs for Mobility Research.pdf",
+    "category": "DUT Knowledge Hub Outputs",
+    "document_url": "https://dutpartnership.eu/sites/default/files/2026-09/DUT%20Knowledge%20Hub_15minC%20Working%20Paper.%20Structural%20Data%20Needs%20for%20Mobility%20Research.pdf",
+    "file_type": "pdf",
+    "file_size_text": "pdf 5.57 MB",
+    "canonical_url": "https://dutpartnership.eu/library",
+    "source_status": "possibly_removed",
+    "retrieved_at": "2026-09-16T11:44:20Z",
+    "content_hash": "sha256:1a5d4a5360e76b2b76ddb66c24f320d96ba11b1e88eeb47a84d8ed47f8937d7e"
   },
   {
     "external_id": "dut-publication-kh-15minc-20-20making-liveable-streets-happen-pdf-0ff886021c",

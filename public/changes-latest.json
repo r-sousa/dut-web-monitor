@@ -1,21 +1,5 @@
 [
   {
-    "dataset": "calls",
-    "external_id": "dut-call-dut-call-2026-dcf1208cd1",
-    "change_type": "modified",
-    "materiality": "standard",
-    "changed_fields": {
-      "content_hash": {
-        "old": "sha256:834ca79fdf52e5d2d832784ce259eedd132ca41da34556c06fd7018f1bd16974",
-        "new": "sha256:9d625f83dbfee3b0eaeccf4d2dea90a57f1614d345d87b24d3f024ba5c78595a"
-      },
-      "documents_json": {
-        "old": "[{\"title\": \"DUT Call 2026_Call Text_0.pdf (pdf 3.42 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-10/DUT%20Call%202026_Call%20Text_0.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]",
-        "new": "[{\"title\": \"DUT Call 2026_Call Text_0.pdf (pdf 3.42 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-11/DUT%20Call%202026_Call%20Text_0.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]"
-      }
-    }
-  },
-  {
     "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
@@ -28,11 +12,39 @@
     }
   },
   {
-    "dataset": "news",
-    "external_id": "dut-news-dut-city-panel-met-szeged-e6b2733d3e",
+    "dataset": "publications",
+    "external_id": "dut-publication-new-20dut-20kh-15minc-20structural-20data-20needs-20for-20mobility-20research-pdf-ef52919493",
     "change_type": "new",
     "materiality": "standard",
     "changed_fields": {}
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-knowledge-20hub-15minc-20-20making-liveable-streets-happen-202026-pdf-411283871c",
+    "change_type": "modified",
+    "materiality": "standard",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:f8951aa87015ec8e1dddf98eb7ae8e837fdd2bd7ddb18d5fba0ae643309e3517",
+        "new": "sha256:2998feb27c4f55d511de5067ba1845918550cca1e7c083e8beef011ce82f214c"
+      },
+      "title": {
+        "old": "Knowledge Hub_15minC Making_Liveable_Streets_Happen 2026.pdf",
+        "new": "Knowledge Hub_15minC Making Liveable Streets Happen 2026.pdf"
+      }
+    }
+  },
+  {
+    "dataset": "publications",
+    "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20working-20paper-20structural-20data-20needs-20for-20mobility-20research-pdf-a1c90083be",
+    "change_type": "possibly_removed",
+    "materiality": "high",
+    "changed_fields": {
+      "source_status": {
+        "old": "active",
+        "new": "possibly_removed"
+      }
+    }
   },
   {
     "dataset": "publications",
