@@ -13,35 +13,12 @@
   },
   {
     "dataset": "publications",
-    "external_id": "dut-publication-new-20dut-20kh-15minc-20structural-20data-20needs-20for-20mobility-20research-pdf-ef52919493",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
-    "dataset": "publications",
-    "external_id": "dut-publication-knowledge-20hub-15minc-20-20making-liveable-streets-happen-202026-pdf-411283871c",
-    "change_type": "modified",
-    "materiality": "standard",
-    "changed_fields": {
-      "content_hash": {
-        "old": "sha256:f8951aa87015ec8e1dddf98eb7ae8e837fdd2bd7ddb18d5fba0ae643309e3517",
-        "new": "sha256:2998feb27c4f55d511de5067ba1845918550cca1e7c083e8beef011ce82f214c"
-      },
-      "title": {
-        "old": "Knowledge Hub_15minC Making_Liveable_Streets_Happen 2026.pdf",
-        "new": "Knowledge Hub_15minC Making Liveable Streets Happen 2026.pdf"
-      }
-    }
-  },
-  {
-    "dataset": "publications",
     "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20working-20paper-20structural-20data-20needs-20for-20mobility-20research-pdf-a1c90083be",
     "change_type": "possibly_removed",
     "materiality": "high",
     "changed_fields": {
       "source_status": {
-        "old": "active",
+        "old": "possibly_removed",
         "new": "possibly_removed"
       }
     }
