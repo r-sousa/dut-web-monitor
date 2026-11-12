@@ -273,17 +273,17 @@
     "content_hash": "sha256:4057d8f934dad58a7915c9b39ae1b48ed617c8439825651dba990ca096f6f6b6"
   },
   {
-    "external_id": "dut-publication-utm-20ped-20a-20global-20perspective-201097-iqs-public-web-pdf-ae77195019",
+    "external_id": "dut-publication-utm-20ped-20a-20global-20perspective-2012-11-2026-public-web-pdf-4fc8b712a2",
     "content_type": "publication",
     "title": "Urban Transitions Mission. Positive energy districts and neighbourhoods: A global perspective on district-scale urban transitions",
     "category": "DUT Publications",
-    "document_url": "https://dutpartnership.eu/sites/default/files/2026-10/UTM%20PED%20A%20global%20perspective%201097-IQS-Public-web.pdf",
+    "document_url": "https://dutpartnership.eu/sites/default/files/2026-11/UTM%20PED%20A%20global%20perspective%2012_11_2026_Public-web.pdf",
     "file_type": "pdf",
-    "file_size_text": "pdf 2.45 MB",
+    "file_size_text": "pdf 2.43 MB",
     "canonical_url": "https://dutpartnership.eu/library",
     "source_status": "active",
-    "retrieved_at": "2026-10-30T13:05:10Z",
-    "content_hash": "sha256:b2d2af5684013b7a63c9170a7af66521377295cf98cc0b2c48cb0c10ff91014b"
+    "retrieved_at": "2026-11-12T15:22:56Z",
+    "content_hash": "sha256:2ac9ab7d79df666ce568e143bf4e03e1ab477a0b44557f185f2fc103f56b2c2d"
   },
   {
     "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20working-20paper-20structural-20data-20needs-20for-20mobility-20research-pdf-a1c90083be",
@@ -323,5 +323,18 @@
     "source_status": "possibly_removed",
     "retrieved_at": "2026-10-20T11:46:51Z",
     "content_hash": "sha256:6bd456ed04a0bd93dfcbcaae56589fbb4f47e04b20a750ace4e1423f98f9c3de"
+  },
+  {
+    "external_id": "dut-publication-utm-20ped-20a-20global-20perspective-201097-iqs-public-web-pdf-ae77195019",
+    "content_type": "publication",
+    "title": "Urban Transitions Mission. Positive energy districts and neighbourhoods: A global perspective on district-scale urban transitions",
+    "category": "DUT Publications",
+    "document_url": "https://dutpartnership.eu/sites/default/files/2026-10/UTM%20PED%20A%20global%20perspective%201097-IQS-Public-web.pdf",
+    "file_type": "pdf",
+    "file_size_text": "pdf 2.45 MB",
+    "canonical_url": "https://dutpartnership.eu/library",
+    "source_status": "possibly_removed",
+    "retrieved_at": "2026-10-30T13:05:10Z",
+    "content_hash": "sha256:b2d2af5684013b7a63c9170a7af66521377295cf98cc0b2c48cb0c10ff91014b"
   }
 ]
