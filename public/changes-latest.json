@@ -13,13 +13,6 @@
   },
   {
     "dataset": "publications",
-    "external_id": "dut-publication-utm-20ped-20a-20global-20perspective-2012-11-2026-public-web-pdf-4fc8b712a2",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
-    "dataset": "publications",
     "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20working-20paper-20structural-20data-20needs-20for-20mobility-20research-pdf-a1c90083be",
     "change_type": "possibly_removed",
     "materiality": "high",
@@ -61,7 +54,7 @@
     "materiality": "high",
     "changed_fields": {
       "source_status": {
-        "old": "active",
+        "old": "possibly_removed",
         "new": "possibly_removed"
       }
     }
