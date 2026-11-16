@@ -20,6 +20,26 @@
     "content_hash": "sha256:d00afa134a859ea9f7bcdb24fa8dc3fe561b0411a344ee040b5a228d966f812e"
   },
   {
+    "external_id": "dut-news-methods-stakeholder-supported-monitoring-and-evaluation-ee0e56ab08",
+    "content_type": "news",
+    "title": "Methods for Stakeholder-supported Monitoring and Evaluation",
+    "canonical_url": "https://dutpartnership.eu/news/methods-stakeholder-supported-monitoring-and-evaluation",
+    "news_type": "News",
+    "published_year": 2026,
+    "published_month": 11,
+    "published_sort_date": "2026-11-01",
+    "author": "Zoë de Jonge, Camilla Sandberg, Ana Calvo",
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-11-16T15:58:48Z",
+    "content_hash": "sha256:7864088ed6d2d2df9666814f34b238fb344c167f41967fd06cbcdad099b56c3a"
+  },
+  {
     "external_id": "dut-news-dut-city-panel-met-szeged-e6b2733d3e",
     "content_type": "news",
     "title": "The DUT City Panel met in Szeged",
