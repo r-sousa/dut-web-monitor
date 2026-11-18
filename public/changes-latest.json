@@ -1,5 +1,21 @@
 [
   {
+    "dataset": "calls",
+    "external_id": "dut-call-dut-call-2026-dcf1208cd1",
+    "change_type": "modified",
+    "materiality": "high",
+    "changed_fields": {
+      "content_hash": {
+        "old": "sha256:9d625f83dbfee3b0eaeccf4d2dea90a57f1614d345d87b24d3f024ba5c78595a",
+        "new": "sha256:1a7b679f80136262005a5f0612c9bb21df7eef2194126b23d6bee1a494ac8d3b"
+      },
+      "status": {
+        "old": "open",
+        "new": "evaluation"
+      }
+    }
+  },
+  {
     "dataset": "events",
     "external_id": "dut-event-urban-lunch-talk-48-project-perspective-public-procurement-key-scale-circularity-cities-aaa0497ecb",
     "change_type": "possibly_removed",
@@ -10,6 +26,13 @@
         "new": "possibly_removed"
       }
     }
+  },
+  {
+    "dataset": "news",
+    "external_id": "dut-news-dut-calls-2027-2028-stakeholder-consultation-40ac970d1c",
+    "change_type": "new",
+    "materiality": "standard",
+    "changed_fields": {}
   },
   {
     "dataset": "publications",

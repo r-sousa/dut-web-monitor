@@ -81,7 +81,7 @@
     "title": "DUT Call 2026",
     "subtitle": "A funding opportunity for transformative urban research and innovation",
     "canonical_url": "https://dutpartnership.eu/calls/dut-call-2026",
-    "status": "open",
+    "status": "evaluation",
     "opening_date": "2026-09-01",
     "stage1_deadline": "2026-11-17",
     "stage2_opening": "2027-02-01",
@@ -91,7 +91,7 @@
     "documents_json": "[{\"title\": \"DUT Call 2026_Call Text_0.pdf (pdf 3.42 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-11/DUT%20Call%202026_Call%20Text_0.pdf\"}, {\"title\": \"DUT Call 2026_Submission Guidelines (pdf 3.63 MB)\", \"url\": \"https://dutpartnership.eu/sites/default/files/2026-09/Submission%20Guidelines%20DUT%20Call%20for%20Proposals_2026_0.pdf\"}]",
     "source_description": null,
     "source_status": "active",
-    "retrieved_at": "2026-11-06T14:23:02Z",
-    "content_hash": "sha256:9d625f83dbfee3b0eaeccf4d2dea90a57f1614d345d87b24d3f024ba5c78595a"
+    "retrieved_at": "2026-11-18T15:46:22Z",
+    "content_hash": "sha256:1a7b679f80136262005a5f0612c9bb21df7eef2194126b23d6bee1a494ac8d3b"
   }
 ]
