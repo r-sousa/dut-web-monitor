@@ -1,14 +1,14 @@
 {
   "schema_version": "1.1",
-  "dataset_version": "2026-11-18T15:46:22Z",
-  "generated_at": "2026-11-18T15:46:22Z",
-  "dataset_hash": "sha256:99b59b3d980f537c6f9a52348af2273ded6734e306e1b0e68ea6753087105caa",
+  "dataset_version": "2026-11-19T15:51:21Z",
+  "generated_at": "2026-11-19T15:51:21Z",
+  "dataset_hash": "sha256:77497ea2410a91ae87535f3b88f0164820790d4481f6a16f58552affb5374427",
   "status": "valid",
   "changed_datasets": [
-    "calls",
     "events",
     "news",
     "publications",
+    "webinars",
     "newsletters"
   ],
   "record_counts": {
@@ -21,10 +21,10 @@
   },
   "dataset_hashes": {
     "calls": "sha256:f2ee3aaaf50b4c1c701640392462113a0b3385aa0e6059fc4a110dde436955b7",
-    "events": "sha256:ba34173d7842deb8a65d1d337c4296e6273aec1359004487da8d0f97206f76f3",
-    "news": "sha256:8d335dc354d18bb895922166c123fc500df58a4543862e71341bf842316ce26f",
+    "events": "sha256:b15db83f00991491557f2a78b0d38b3ff6bf7edeaa8bbe3ec18dacad8fedeaf3",
+    "news": "sha256:38627705d3467cc21165931e173e1c2f1643bf332689c87cfea865592d33a1a8",
     "publications": "sha256:a824901100a1ea6132138d2611c5192f1c34285ed3064d51172e1fa724eaa25f",
-    "webinars": "sha256:e002ad3e8c69f5b842c8cb6764ba8fb4be03d4aafe1add6420d50d3ebf80e903",
+    "webinars": "sha256:e39f15ee200d84569ff9d104c2e65792ba3f07215dbeadbb5a77a30aa6368443",
     "newsletters": "sha256:d4e2b62bfc535487cc0de0a5e343c920faca4b308f63be1ab513d1741e0a3435"
   },
   "files": {
