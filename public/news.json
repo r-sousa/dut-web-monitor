@@ -80,6 +80,26 @@
     "content_hash": "sha256:7864088ed6d2d2df9666814f34b238fb344c167f41967fd06cbcdad099b56c3a"
   },
   {
+    "external_id": "dut-news-call-experts-2026-become-evaluator-project-proposals-7bbad2455a",
+    "content_type": "news",
+    "title": "Call for Experts 2026: Become an Evaluator of Project Proposals",
+    "canonical_url": "https://dutpartnership.eu/news/call-experts-2026-become-evaluator-project-proposals",
+    "news_type": "News",
+    "published_year": 2026,
+    "published_month": 11,
+    "published_sort_date": "2026-11-01",
+    "author": null,
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-11-24T17:53:48Z",
+    "content_hash": "sha256:7be67e3dc6489c0bf64b0fb852ffc613d02116a94314246e24db60433f5e026f"
+  },
+  {
     "external_id": "dut-news-dut-city-panel-met-szeged-e6b2733d3e",
     "content_type": "news",
     "title": "The DUT City Panel met in Szeged",
