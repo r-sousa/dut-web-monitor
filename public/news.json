@@ -20,6 +20,26 @@
     "content_hash": "sha256:60583f7b1e7180fc7355c3e132cfdc1b3e9c71fbc4d66f19e0d5a28a86a13419"
   },
   {
+    "external_id": "dut-news-sharing-project-results-smart-city-expo-4eac45d360",
+    "content_type": "news",
+    "title": "Sharing Project Results at the Smart City Expo",
+    "canonical_url": "https://dutpartnership.eu/news/sharing-project-results-smart-city-expo",
+    "news_type": "News",
+    "published_year": 2026,
+    "published_month": 11,
+    "published_sort_date": "2026-11-01",
+    "author": "Ana Calvo",
+    "topics_json": "[]",
+    "transition_pathways_json": "[]",
+    "source_description": null,
+    "source_priority": 1,
+    "source_role": "primary_european",
+    "source_name": "DUT Partnership",
+    "source_status": "active",
+    "retrieved_at": "2026-11-25T17:20:57Z",
+    "content_hash": "sha256:3092a155341dacdc7420fe0e31b441679a2e682af5af49a9d8800de2daf3d4d5"
+  },
+  {
     "external_id": "dut-news-resilient-inclusive-and-competitive-decoding-economic-viability-peds-deb161535c",
     "content_type": "news",
     "title": "Resilient, Inclusive and Competitive? Decoding Economic Viability for PEDs",
