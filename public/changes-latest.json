@@ -12,13 +12,6 @@
     }
   },
   {
-    "dataset": "news",
-    "external_id": "dut-news-sharing-project-results-smart-city-expo-4eac45d360",
-    "change_type": "new",
-    "materiality": "standard",
-    "changed_fields": {}
-  },
-  {
     "dataset": "publications",
     "external_id": "dut-publication-dut-20knowledge-20hub-15minc-20working-20paper-20structural-20data-20needs-20for-20mobility-20research-pdf-a1c90083be",
     "change_type": "possibly_removed",
